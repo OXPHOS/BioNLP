@@ -1,0 +1,5 @@
+input_data/*
+other_resources/*
+word*/*
+src/preprocessing/.ipynb_checkpoints/*
+.idea/*
