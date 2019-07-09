@@ -39,7 +39,7 @@ def get_reference():
     #     ref_obt.dict_id[i] = 'OBT:' + '0' * (6 - len(str(ref_obt.dict_id[i]))) + str(ref_obt.dict_id[i])
 
     # TODO: MAKE IT FASTER. Can use TAX1_trim
-    ref_tax_raw = pd.read_csv(os.path.join(os.getcwd(), '../../input_data/TAX1.txt'), sep='|')
+    ref_tax_raw = pd.read_csv(os.path.join(os.getcwd(), '../../input_data/TAX1_trim.txt'), sep='|')
     ref_tax = ref_tax_raw.groupby('tax_id').agg(lambda x: x.tolist())
     ref_tax.reset_index(inplace=True)
     ref_tax.columns = ['dict_id', 'dict_name', 'dict_name_class']
@@ -175,7 +175,7 @@ def process_by_entities(data_dir_list):
 
     # drop the columns with corpus-specific information
     no_dup_entities.drop(columns=['text_id', 'entity_id', 'positions', 'standard_id'], inplace=True)
-    no_dup_entities.drop_duplicates('name', inplace=True)
+    no_dup_entities.drop_duplicates(['name', 'dict_id'], inplace=True)
 
     no_dup_entities.to_csv(os.path.join('../../input_data/wide_tables', 'All_entities_with_labels_nodup.tsv'),
                            index=False, sep='\t')
