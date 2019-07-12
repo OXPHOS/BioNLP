@@ -38,7 +38,6 @@ def get_reference():
     # for i in range(ref_obt.shape[0]):
     #     ref_obt.dict_id[i] = 'OBT:' + '0' * (6 - len(str(ref_obt.dict_id[i]))) + str(ref_obt.dict_id[i])
 
-    # TODO: MAKE IT FASTER. Can use TAX1_trim
     ref_tax_raw = pd.read_csv(os.path.join(os.getcwd(), '../../input_data/TAX1_trim.txt'), sep='|')
     ref_tax = ref_tax_raw.groupby('tax_id').agg(lambda x: x.tolist())
     ref_tax.reset_index(inplace=True)
