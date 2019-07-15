@@ -7,8 +7,12 @@ def normalize():
     pass
 
 
-def generate_averaging_vectors(namelist):
-    vectors = np.array([[np.nan]*vector_size for _ in range(len(namelist))])
+def generate_averaging_vectors(namelist, default_value=True, fill_na=False):
+    if default_value:
+        unk = w2v_model.get_vector('unknown')
+        vectors = np.array([unk for _ in range(len(namelist))])
+    else:
+        vectors = np.array([[np.nan] * vector_size for _ in range(len(namelist))])
     i = 0
     for e in namelist:
         name = ''.join(filter(whitelist.__contains__, e.replace('-', ' ')))
@@ -66,8 +70,8 @@ def process_entity_and_label_table(tablename):
     names, labels = parse_entity_and_label_table(tablename)
     names_vec = generate_fixed_length_vectors(names, 8)
     labels_vec = generate_averaging_vectors(labels)
-    np.save(os.path.join(path, 'names_vectors.npy'), names_vec)
-    np.save(os.path.join(path, 'labels_vectors.npy'), labels_vec)
+    np.save(os.path.join(path, 'val_names_vectors.npy'), names_vec)
+    np.save(os.path.join(path, 'val_labels_vectors.npy'), labels_vec)
 
 
 if __name__=="__main__":
@@ -76,5 +80,5 @@ if __name__=="__main__":
     vector_size = w2v_model.vector_size
     whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     path = os.path.join(os.getcwd(), '../input_data/vsm/')
-    process_biotope_dict()
-    # process_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
+    process_biotope_dict(default_value=False)
+    process_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')
