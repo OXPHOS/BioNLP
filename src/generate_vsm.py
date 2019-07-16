@@ -38,15 +38,23 @@ def generate_fixed_length_vectors(namelist, phrase_size):
     for e in namelist:
         name = ''.join(filter(whitelist.__contains__, e.replace('-', ' ')))
         if len(name.split()) > phrase_size:
-            i += 1
-            continue
-        j = 0
-        for w in name.split():
-            if w in w2v_model.vocab:
-                vectors[i][j] = w2v_model.get_vector(w)
-            elif w.lower() in w2v_model.vocab:
-                vectors[i][j] = w2v_model.get_vector(w.lower())
-            j += 1
+            tmp = list()
+            for w in name.split():
+                if w in w2v_model.vocab:
+                    tmp.append(w2v_model.get_vector(w))
+                elif w.lower() in w2v_model.vocab:
+                    tmp.append(w2v_model.get_vector(w.lower()))
+            avg_factor = len(tmp) / phrase_size + 1
+            for k in range(0, len(tmp), avg_factor):
+                vectors[i][k/avg_factor] = np.mean(tmp[k:k+avg_factor])
+        else:
+            j = 0
+            for w in name.split():
+                if w in w2v_model.vocab:
+                    vectors[i][j] = w2v_model.get_vector(w)
+                elif w.lower() in w2v_model.vocab:
+                    vectors[i][j] = w2v_model.get_vector(w.lower())
+                j += 1
         i += 1
     return vectors
 
