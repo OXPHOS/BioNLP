@@ -1,7 +1,7 @@
 import gensim
 import numpy as np
 from sklearn.decomposition import PCA
-from src import embedding_size
+from src import entity_embedding_size, context_embedding_size, vector_len
 from src.parse import *
 
 
@@ -10,7 +10,7 @@ def reduce_dimension(vectors):
     return pca.fit_transform(vectors)
 
 
-def generate_averaging_vectors(namelist, default_value=True, fill_na=False):
+def averaging_vectors(namelist, default_value=True, fill_na=False):
     if default_value:
         unk = w2v_model.get_vector('unknown')
         vectors = np.array([unk for _ in range(len(namelist))])
@@ -35,7 +35,7 @@ def generate_averaging_vectors(namelist, default_value=True, fill_na=False):
     return vectors
 
 
-def generate_fixed_length_vectors(namelist):
+def fixed_length_vectors(namelist, embedding_size=entity_embedding_size):
     vectors = np.zeros((len(namelist), embedding_size, vector_size))
     i = 0
     for e in namelist:
@@ -62,15 +62,35 @@ def generate_fixed_length_vectors(namelist):
     return vectors
 
 
-def generate_weighted_vectors():
+def weighted_vectors():
     # genia-pos
     pass
+
+
+def fixed_length_vectors_by_text(names):
+    # print(names.groupby('text_id').count())
+    names_by_text = names.groupby('text_id').aggregate(lambda x: set(x))
+    names_by_text['vec'] = None
+    # for idx in names_by_text.index:
+    #     tmp = {}
+    #     for n in names_by_text.name[idx]:
+    #         tmp[n] = fixed_length_vectors(list(n), 8)[0]
+    #     names_by_text.name[idx] = tmp
+    # print(names_by_text.loc['F-25496341-008', 'name'].values())
+
+    for idx in names_by_text.index:
+        tmp = fixed_length_vectors(names_by_text.name[idx], entity_embedding_size)
+        tmp = tmp.reshape(-1, tmp.shape[-1])
+        tmp = np.lib.pad(tmp, ((0, context_embedding_size-entity_embedding_size-tmp.shape[0]), (0, 0)),
+                         'constant', constant_values=(0))
+        names_by_text.vec[idx] = tmp
+    return names_by_text
 
 
 def process_biotope_dict():
     ref = parse_biotope_dict()
 
-    vectors = generate_averaging_vectors(ref.name)
+    vectors = averaging_vectors(ref.name)
     np.save(os.path.join(path, 'OBT_VSM_vectors.npy'), vectors)
 
     ref['vec'] = list(vectors)
@@ -79,15 +99,15 @@ def process_biotope_dict():
 
 def process_entity_and_label_table(tablename):
     names_and_labels = parse_entity_and_label_table(tablename, return_id=False)
-    names_vec = generate_fixed_length_vectors(names_and_labels.name)
-    labels_vec = generate_averaging_vectors(names_and_labels.dict_name)
+    names_vec = fixed_length_vectors(names_and_labels.name)
+    labels_vec = averaging_vectors(names_and_labels.dict_name)
     np.save(os.path.join(path, '%s_names_vectors.npy' %tablename.split('_', -1)[-1]), names_vec)
     np.save(os.path.join(path, '%s_labels_vectors.npy' %tablename.split('_', -1)[-1]), labels_vec)
 
 
 def generated_normalized_dict_and_labels():
     ref = parse_biotope_dict()
-    vectors = generate_averaging_vectors(ref.name)
+    vectors = averaging_vectors(ref.name)
     vectors = reduce_dimension(vectors)
     np.save(os.path.join(path, 'OBT_VSM_norm.npy'), vectors)
     ref['vec'] = list(vectors)
@@ -101,6 +121,17 @@ def generated_normalized_dict_and_labels():
                 labels_vec)
 
 
+def generate_context_entity_list(tablename):
+    names_and_labels = parse_entity_and_label_table(tablename, return_id=False)
+    names_vec = fixed_length_vectors(names_and_labels.name)
+
+    names_by_text = fixed_length_vectors_by_text(names_and_labels[['text_id', 'name']])
+    concat_vec = np.stack(names_by_text.loc[names_and_labels.text_id, 'vec'], axis=0)
+    names_vec = np.concatenate((names_vec, concat_vec), axis=1)
+    print(names_vec.shape)
+    np.save(os.path.join(path, '%s_names_vectors_with_context.npy' %tablename.split('_', -1)[-1]), names_vec)
+
+
 if __name__=="__main__":
     w2v_model = gensim.models.KeyedVectors.load_word2vec_format(
        '../input_data/wikipedia-pubmed-and-PMC-w2v.bin', binary=True)
@@ -108,6 +139,8 @@ if __name__=="__main__":
     whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     path = os.path.join(os.getcwd(), '../input_data/vsm/')
     # process_biotope_dict(default_value=False)
-    process_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
-    process_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')
-    generated_normalized_dict_and_labels()
+    # process_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
+    # process_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')
+    # generated_normalized_dict_and_labels()
+    # generate_context_entity_list('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
+    generate_context_entity_list('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')

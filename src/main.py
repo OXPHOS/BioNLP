@@ -8,7 +8,7 @@ from sklearn.metrics.pairwise import cosine_similarity
 
 import src.plot as plot
 from src.parse import *
-from src import embedding_size
+from src import entity_embedding_size, context_embedding_size, vector_len
 
 
 def perfect_match(data):
@@ -47,11 +47,12 @@ class Model:
 
         print("Initiating =========================================>")
         self.model = Sequential()
-        self.model.add(Conv1D(filters=arg, kernel_size=2, padding='same',
-                              input_shape=(embedding_size, 200)))
-        # self.model.add(MaxPooling1D(2))
-        # self.model.add(Dropout(0.2))
-        self.model.add(MaxPooling1D(embedding_size))
+        self.model.add(Conv1D(filters=arg, kernel_size=5, padding='same',
+                              input_shape=(context_embedding_size, vector_len)))
+        self.model.add(MaxPooling1D(5))
+        self.model.add(Dropout(0.2))
+        self.model.add(Conv1D(filters=arg, kernel_size=5, padding='same'))
+        self.model.add(MaxPooling1D(context_embedding_size//5))
         self.model.add(Dense(139))
         self.model.compile(loss='cosine_proximity', optimizer=SGD())
     
@@ -117,11 +118,11 @@ def generate_data(x, y, lookup_table):
 
 
 def main():
-    X = np.load(os.path.join(os.getcwd(), "../input_data/vsm/train.tsv_names_vectors.npy"),
+    X = np.load(os.path.join(os.getcwd(), "../input_data/vsm/train.tsv_names_vectors_with_context.npy"),
                 allow_pickle=True)
     Y = np.load(os.path.join(os.getcwd(), "../input_data/vsm/train.tsv_labels_vectors_norm.npy"),
                 allow_pickle=True)
-    X_val = np.load(os.path.join(os.getcwd(), "../input_data/vsm/dev.tsv_names_vectors.npy"),
+    X_val = np.load(os.path.join(os.getcwd(), "../input_data/vsm/dev.tsv_names_vectors_with_context.npy"),
                     allow_pickle=True)
     Y_val = np.load(os.path.join(os.getcwd(), "../input_data/vsm/dev.tsv_labels_vectors_norm.npy"),
                     allow_pickle=True)
@@ -135,7 +136,7 @@ def main():
 
     params = pd.DataFrame(columns=['value', 'Training_loss', 'Cross_val_loss', 'Validation_loss',
                                    'Training_accuracy', 'Validation_accuracy'])
-    for i in range(500, 4701, 100):
+    for i in range(1000, 10001, 1000):
         print("----", i, "----")
         model = Model(ref_vec, i)
         loss = model.train(X[train_match_mask], Y[train_match_mask], X_val[val_match_mask], Y_val[val_match_mask])
