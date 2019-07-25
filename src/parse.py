@@ -12,7 +12,7 @@ def parse_a1_files():
 
 def parse_entity_and_label_table(tablename):
     data_in = pd.read_csv(os.path.join(os.getcwd(),
-                                       '../input_data/wide_tables/%s' % tablename), sep='\t')
+                                       '../input_data/wide_tables/ab3p_%s' % tablename), sep='\t')
     data_in = data_in[~data_in.dict_id.isna()]
     phe_hab = data_in[data_in.category.isin(['Phenotype', 'Habitat'])][['text_id', 'name', 'dict_name', 'dict_id']]\
         .reset_index()
