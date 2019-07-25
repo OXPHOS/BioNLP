@@ -10,15 +10,12 @@ def parse_a1_files():
     pass
 
 
-def parse_entity_and_label_table(tablename, return_id=False):
+def parse_entity_and_label_table(tablename):
     data_in = pd.read_csv(os.path.join(os.getcwd(),
                                        '../input_data/wide_tables/%s' % tablename), sep='\t')
     data_in = data_in[~data_in.dict_id.isna()]
-    if return_id:
-        phe_hab = data_in[data_in.category.isin(['Phenotype', 'Habitat'])][['dict_id', 'dict_name']].reset_index()
-    else:
-        phe_hab = data_in[data_in.category.isin(['Phenotype', 'Habitat'])][['text_id', 'name', 'dict_name']]\
-            .reset_index()
+    phe_hab = data_in[data_in.category.isin(['Phenotype', 'Habitat'])][['text_id', 'name', 'dict_name', 'dict_id']]\
+        .reset_index()
     return phe_hab
 
 

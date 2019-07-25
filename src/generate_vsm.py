@@ -98,11 +98,13 @@ def process_biotope_dict():
 
 
 def process_entity_and_label_table(tablename):
-    names_and_labels = parse_entity_and_label_table(tablename, return_id=False)
+    prefix = tablename.split('_', -1)[-1]
+    names_and_labels = parse_entity_and_label_table(tablename)
     names_vec = fixed_length_vectors(names_and_labels.name)
     labels_vec = averaging_vectors(names_and_labels.dict_name)
-    np.save(os.path.join(path, '%s_names_vectors.npy' %tablename.split('_', -1)[-1]), names_vec)
-    np.save(os.path.join(path, '%s_labels_vectors.npy' %tablename.split('_', -1)[-1]), labels_vec)
+    names_and_labels.to_csv(os.path.join(path, '%s_names_and_labels.tsv' %prefix), sep='\t')
+    np.save(os.path.join(path, '%s_names_vectors.npy' %prefix), names_vec)
+    np.save(os.path.join(path, '%s_labels_vectors.npy' %prefix), labels_vec)
 
 
 def generated_normalized_dict_and_labels():
@@ -115,21 +117,47 @@ def generated_normalized_dict_and_labels():
 
     for tablename in ['entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv',
                       'entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv']:
-        labels_id_and_labels = parse_entity_and_label_table(tablename, return_id=True)
+        labels_id_and_labels = parse_entity_and_label_table(tablename)
         labels_vec = vectors[list(map(pd.Index(ref.id).get_loc, labels_id_and_labels.dict_id))]
         np.save(os.path.join(path, '%s_labels_vectors_norm.npy' %tablename.split('_', -1)[-1]),
                 labels_vec)
 
 
 def generate_context_entity_list(tablename):
-    names_and_labels = parse_entity_and_label_table(tablename, return_id=False)
+    names_and_labels = parse_entity_and_label_table(tablename)
     names_vec = fixed_length_vectors(names_and_labels.name)
 
     names_by_text = fixed_length_vectors_by_text(names_and_labels[['text_id', 'name']])
     concat_vec = np.stack(names_by_text.loc[names_and_labels.text_id, 'vec'], axis=0)
     names_vec = np.concatenate((names_vec, concat_vec), axis=1)
-    print(names_vec.shape)
+#     print(names_vec.shape)
+    names_and_labels.to_csv(os.path.join(path, '%s_names_and_labels_with_context.tsv' %tablename.split('_', -1)[-1]), sep='\t')
     np.save(os.path.join(path, '%s_names_vectors_with_context.npy' %tablename.split('_', -1)[-1]), names_vec)
+
+
+def generate_five_fold_dataset():
+    ref = parse_biotope_dict()
+    vectors = averaging_vectors(ref.name)
+    vectors = reduce_dimension(vectors)
+    np.save(os.path.join(path, 'OBT_VSM_norm.npy'), vectors)
+    ref['vec'] = list(vectors)
+    ref.to_csv(os.path.join(path, 'OBT_VSM_norm.tsv'), sep='\t')
+
+    names_and_labels = parse_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
+    names_and_labels = pd.concat([names_and_labels,
+                                 parse_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')])
+    names_and_labels.reset_index(drop=True, inplace=True)
+    test_set = names_and_labels.sample(frac=0.17)
+    training_set = names_and_labels[~names_and_labels.index.isin(test_set.index)]
+
+    for dataset, datatype in [(test_set, 'test'), (training_set, 'train')]:
+        dataset.to_csv(os.path.join(path, '5fold_%s.tsv' % datatype), sep='\t')
+
+        names_vec = fixed_length_vectors(dataset.name)
+        labels_vec = vectors[list(map(pd.Index(ref.id).get_loc, dataset.dict_id))]
+
+        np.save(os.path.join(path, '5fold_%s_names_vectors.npy' %datatype), names_vec)
+        np.save(os.path.join(path, '5fold_%s_labels_vectors_norm.npy' %datatype), labels_vec)
 
 
 if __name__=="__main__":
@@ -138,9 +166,11 @@ if __name__=="__main__":
     vector_size = w2v_model.vector_size
     whitelist = set('abcdefghijklmnopqrstuvwxyz ABCDEFGHIJKLMNOPQRSTUVWXYZ')
     path = os.path.join(os.getcwd(), '../input_data/vsm/')
+
     # process_biotope_dict(default_value=False)
     # process_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
     # process_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')
     # generated_normalized_dict_and_labels()
     # generate_context_entity_list('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
-    generate_context_entity_list('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')
+    # generate_context_entity_list('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')
+    generate_five_fold_dataset()
