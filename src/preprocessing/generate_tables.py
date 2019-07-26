@@ -4,6 +4,9 @@
 """
 Merge training and validation data and labels to wide tables for sample analysis
 
+NOTE: method merge_input_data() and merge_input_and_labels() may give files with different length,
+      as a single entity may have multiple labels as given by the data sets.
+
 @ Date: 2019-07-05
 @ Author: OXPHOS
 """
@@ -158,31 +161,35 @@ def merge_input_and_labels(file_path, input_files, filename=None, abbrfile=None)
         return final_res
 
 
-def process_by_datasets(data_dir_name, output_to_file=True, check_integrity=True, abbrfile=None):
+def process_by_datasets(data_dir_name, output_to_file=True, abbrfile=None, label=True):
     """
     Extract information from all targeted files in the input directory,
     and output tables
     
     :param data_dir_name: input dir name 
     :param output_to_file: whether the results will be output to files
-    :param check_integrity: whether to check each input file has a matched label file
     :param abbrfile: relative path to the abbreviation extraction file
+    :param label: whether the input file has corresponding labels
     :return: if output_to_file: None
              else: dataframe
     """
     file_path = os.path.join(os.getcwd(), os.path.join('../../input_data', data_dir_name))
     input_files = [_ for _ in os.listdir(file_path) if _.endswith('.a1')]
-    if check_integrity:
+    if label: # Make sure every input file has a corresponding label file
         check_input_data(file_path, input_files)
     if abbrfile:
         abbrfile = os.path.join(os.getcwd(), os.path.join('../../input_data', abbrfile))
 
     if output_to_file:
         merge_input_data(file_path, input_files, 'ab3p_entity_list_%s.tsv'%data_dir_name, abbrfile=abbrfile)
-        # merge_input_and_labels(file_path, input_files, 'ab3p_entity_and_label_list_%s.tsv'%data_dir_name,
-        #                        abbrfile=abbrfile)
+        if label:
+            merge_input_and_labels(file_path, input_files, 'ab3p_entity_and_label_list_%s.tsv'%data_dir_name,
+                                   abbrfile=abbrfile)
     else:
-        return merge_input_and_labels(file_path, input_files)
+        if label:
+            return merge_input_and_labels(file_path, input_files, abbrfile=abbrfile)
+        else:
+            return merge_input_data(file_path, input_files, abbrfile=abbrfile)
 
 
 def process_by_entities(data_dir_list):
@@ -210,9 +217,11 @@ if __name__ == "__main__":
     # Parse reference dictionaries: OBT dict and NCBI Taxdump
     ref_obt, ref_tax = get_reference()
 
-    process_by_datasets('BioNLP-OST-2019_BB-norm_train',
-                        abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_train/abbreviations.txt')
-    process_by_datasets('BioNLP-OST-2019_BB-norm_dev')
+    # process_by_datasets('BioNLP-OST-2019_BB-norm_train',
+    #                     abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_train/abbreviations.txt')
+    # process_by_datasets('BioNLP-OST-2019_BB-norm_dev',
+    #                     abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_dev/abbreviations.txt')
+    process_by_datasets('BioNLP-OST-2019_BB-norm_test',
+                        abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_test/abbreviations.txt',
+                        label=False)
     # process_by_entities(['BioNLP-OST-2019_BB-norm_train', 'BioNLP-OST-2019_BB-norm_dev'])
-
-
