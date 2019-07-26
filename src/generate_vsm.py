@@ -143,7 +143,7 @@ def generate_context_entity_list(tablename):
     np.save(os.path.join(path, '%s_names_vectors_with_context.npy' %tablename.split('_', -1)[-1]), names_vec)
 
 
-def generate_five_fold_dataset():
+def generate_five_fold_dataset(prediction=False):
     ref = parse_biotope_dict()
     vectors = averaging_vectors(ref.name)
     vectors = reduce_dimension(vectors)
@@ -154,18 +154,30 @@ def generate_five_fold_dataset():
     names_and_labels = parse_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
     names_and_labels = pd.concat([names_and_labels,
                                  parse_entity_and_label_table('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')])
+    if prediction:
+        training_size = len(names_and_labels)
+        names_and_labels = pd.concat([names_and_labels,
+                                     parse_entity_table('entity_list_BioNLP-OST-2019_BB-norm_test.tsv')])
     names_and_labels.reset_index(drop=True, inplace=True)
-    test_set = names_and_labels.sample(frac=0.17)
-    training_set = names_and_labels[~names_and_labels.index.isin(test_set.index)]
+
+    if prediction:
+        training_set = names_and_labels.iloc[:training_size]
+        test_set = names_and_labels[training_size:]
+    else:
+        test_set = names_and_labels.sample(frac=0.17)
+        training_set = names_and_labels[~names_and_labels.index.isin(test_set.index)]
 
     for dataset, datatype in [(test_set, 'test'), (training_set, 'train')]:
         dataset.to_csv(os.path.join(path, '5fold_%s.tsv' % datatype), sep='\t')
 
         names_vec = fixed_length_vectors(dataset.name)
-        labels_vec = vectors[list(map(pd.Index(ref.id).get_loc, dataset.dict_id))]
+        np.save(os.path.join(path, '5fold_%s_names_vectors.npy' % datatype), names_vec)
 
-        np.save(os.path.join(path, '5fold_%s_names_vectors.npy' %datatype), names_vec)
-        np.save(os.path.join(path, '5fold_%s_labels_vectors_norm.npy' %datatype), labels_vec)
+        if prediction and datatype=='test':
+            pass
+        else:
+            labels_vec = vectors[list(map(pd.Index(ref.id).get_loc, dataset.dict_id))]
+            np.save(os.path.join(path, '5fold_%s_labels_vectors_norm.npy' %datatype), labels_vec)
 
 
 if __name__=="__main__":
@@ -181,4 +193,4 @@ if __name__=="__main__":
     # generated_normalized_dict_and_labels()
     # generate_context_entity_list('entity_and_label_list_BioNLP-OST-2019_BB-norm_train.tsv')
     # generate_context_entity_list('entity_and_label_list_BioNLP-OST-2019_BB-norm_dev.tsv')
-    generate_five_fold_dataset()
+    generate_five_fold_dataset(prediction=True)

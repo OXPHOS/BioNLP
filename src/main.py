@@ -25,6 +25,7 @@ def perfect_match(data):
         if (ref.name == data.input[i]).any():
             matched_idx = ref.name[ref.name == data.input[i]].index[0]
             data.pred[i] = ref.name[matched_idx]
+            data.pred_obt[i] = ref.id[matched_idx]
             data.method[i] = 'Exact match'
             if data.pred[i] == data.labels[i]:
                 correct += 1
@@ -36,6 +37,7 @@ def perfect_match(data):
                 matched_idx = ref.name[ref.name == s[0]].index[0]
                 data.pred[i] = ref.name[matched_idx]
                 data.method[i] = 'Cheeses'
+                data.pred_obt[i] = ref.id[matched_idx]
                 if data.pred[i] == data.labels[i]:
                     correct += 1
 
@@ -49,12 +51,12 @@ class Model:
     def __init__(self, arg, fname=None):
         print("Initiating =========================================>")
         self.model = Sequential()
-        self.model.add(Conv1D(filters=arg, kernel_size=5, padding='same',
+        self.model.add(Conv1D(filters=arg, kernel_size=4, padding='same',
                               input_shape=(entity_embedding_size, vector_len)))
         self.model.add(MaxPooling1D(entity_embedding_size))
         # self.model.add(Dropout(0.2))
-        # self.model.add(Conv1D(filters=arg, kernel_size=5, padding='same'))
-        # self.model.add(MaxPooling1D(context_embedding_size//5))
+        # self.model.add(Conv1D(filters=arg, kernel_size=4, padding='same'))
+        # self.model.add(MaxPooling1D(entity_embedding_size//2))
         self.model.add(Dense(139))
         self.model.compile(loss='cosine_proximity', optimizer=SGD())
 
@@ -84,35 +86,46 @@ class Model:
         return history.history['loss'][-1], history.history['val_loss'][-1], eval_loss
 
     @staticmethod
-    def eval(models, ref_vec, x, data, mask, filename):
+    def eval(models, ref_vec, x, data, mask, filename, prediction=False):
         print("Evaluating ============================>" )
         if isinstance(models, list):
-            data.method[mask] = 'CNN'
             pred_result = pd.DataFrame(index=range(len(x)))
             for i, m in enumerate(models):
                 y_pred = m.model.predict(x[mask])
                 y_pred = np.reshape(y_pred, (y_pred.shape[0], y_pred.shape[2]))
                 idx_pred = np.argmax(cosine_similarity(y_pred, np.nan_to_num(ref_vec)), axis=1)
                 pred_result[i] = ref.name[idx_pred].reset_index(drop=True)#reindex(pred_result.index)
+            data['score'] = None
             for i, m in enumerate(mask):
                 counter = Counter(pred_result.iloc[i].tolist())
                 # print(i, m, counter, data.iloc[m])
                 data.pred[m] = max(counter, key=lambda k: counter[k])
+                data.pred_obt[m] = ref.id[ref.name==data.pred[m]].item()
+                data.score[m] = counter[data.pred[m]]
         else:
             y_pred = models.model.predict(x)
             y_pred = np.reshape(y_pred, (y_pred.shape[0], y_pred.shape[2]))
             idx_pred = np.argmax(cosine_similarity(y_pred, np.nan_to_num(ref_vec)), axis=1)
             data.pred[mask] = ref.name[idx_pred[mask]]
-            data.method[mask] = 'CNN'
+            data.pred_obt[mask] = ref.id[idx_pred[mask]]
 
-        result = data[['input', 'labels', 'pred', 'method']].sort_values('input')
-        result.to_csv(filename, sep='\t')
+        data.method[mask] = 'CNN'
 
-        accuracy_cnn = sum(result[result.method=='CNN'].labels==result[result.method=='CNN'].pred) \
-                       / len(result[result.method=='CNN'])
-        accuracy_total = sum(result.labels==result.pred) / len(result)
-        print("CNN accuracy:", accuracy_cnn, " Total accuracy:", accuracy_total)
-        return accuracy_cnn
+        result = data.drop(columns=['input_vecs', 'labels_vecs'])
+
+        if prediction:
+            result.to_csv(filename, sep='\t')
+            result = result.drop(columns=['labels', 'method', 'score'])
+            result.columns=['text_id', 'entity_id', 'word', 'matched_name', 'matched_id']
+            result.to_csv('OntoBiotope_result.tsv', sep='\t', index=False)
+        else:
+            result = result.sort_values('input')
+            result.to_csv(filename, sep='\t')
+            accuracy_cnn = sum(result[result.method=='CNN'].labels==result[result.method=='CNN'].pred) \
+                           / len(result[result.method=='CNN'])
+            accuracy_total = sum(result.labels==result.pred) / len(result)
+            print("CNN accuracy:", accuracy_cnn, " Total accuracy:", accuracy_total)
+            return accuracy_cnn
 
     '''
     def cos_distance(y_true, y_pred):
@@ -128,9 +141,11 @@ class Model:
 def generate_data(x, y, tablename):
     names_and_labels = pd.read_csv(os.path.join(os.getcwd(), '../input_data/vsm/%s' % tablename), sep='\t')
     assert (len(names_and_labels.dict_name) == len(y))
-    result = pd.DataFrame([names_and_labels.name.values, x, names_and_labels.dict_name.values, y]).T
-    result.columns = ['input', 'input_vecs', 'labels', 'labels_vecs']
+    result = pd.DataFrame([names_and_labels.text_id.values, names_and_labels.entity_id.values,
+                           names_and_labels.name.values, x, names_and_labels.dict_name.values, y]).T
+    result.columns = ['text_id', 'entity_id', 'input', 'input_vecs', 'labels', 'labels_vecs']
     result['pred'] = None
+    result['pred_obt'] = None
     result['method'] = None
     return result
 
@@ -154,7 +169,7 @@ def single_model():
 
     params = pd.DataFrame(columns=['value', 'Training_loss', 'Cross_val_loss', 'Validation_loss',
                                    'Training_accuracy', 'Validation_accuracy'])
-    for i in range(1000, 10001, 1000):
+    for i in range(1000, 10001, 1000): # result: 4700 is the best filter number
         print("----", i, "----")
         model = Model(i)
         loss = model.train(X[train_match_mask], Y[train_match_mask], X_val[val_match_mask], Y_val[val_match_mask])
@@ -165,15 +180,18 @@ def single_model():
     # print(params.loc[params.Validation_accuracy.idxmax()])
 
 
-def voting_model():
+def voting_model(prediction=False):
     X = np.load(os.path.join(os.getcwd(), "../input_data/vsm/5fold_train_names_vectors.npy"),
                 allow_pickle=True)
     Y = np.load(os.path.join(os.getcwd(), "../input_data/vsm/5fold_train_labels_vectors_norm.npy"),
                 allow_pickle=True)
     X_test = np.load(os.path.join(os.getcwd(), "../input_data/vsm/5fold_test_names_vectors.npy"),
-                    allow_pickle=True)
-    Y_test = np.load(os.path.join(os.getcwd(), "../input_data/vsm/5fold_test_labels_vectors_norm.npy"),
-                    allow_pickle=True)
+                     allow_pickle=True)
+    if prediction:
+        Y_test = np.empty(X_test.shape, dtype=np.float32)
+    else:
+        Y_test = np.load(os.path.join(os.getcwd(), "../input_data/vsm/5fold_test_labels_vectors_norm.npy"),
+                         allow_pickle=True)
     ref_vec = np.load(os.path.join(os.getcwd(), "../input_data/vsm/OBT_VSM_norm.npy"),
                       allow_pickle=True)
 
@@ -181,24 +199,26 @@ def voting_model():
     test_data = generate_data(X_test, Y_test, '5fold_test.tsv')
     train_and_val_match_result, train_and_val_match_mask = perfect_match(train_and_val_data)
     test_match_result, test_match_mask = perfect_match(test_data)
+    print(X.shape, X_test.shape)
 
     models = []
     tmp_shuffle = train_and_val_match_mask.tolist()
     for j in range(5):
+        np.random.seed(j)
         np.random.shuffle(tmp_shuffle)
         train_match_mask = tmp_shuffle[:math.ceil(len(tmp_shuffle)*0.8)]
         val_match_mask = tmp_shuffle[math.ceil(len(tmp_shuffle)*0.8):]
-        models.append(Model(10000, "Model_%s.h5" %j))
+        models.append(Model(5000, "Model_%s.h5" %j))
         loss = models[j].train(X[train_match_mask], Y[train_match_mask], X[val_match_mask], Y[val_match_mask])
 
     Model.eval(models, ref_vec, X, train_and_val_match_result, train_and_val_match_mask,
                '5fold_pred_result_train_and_val.tsv')
-    # Model.eval(models, ref_vec, X, val_match_result, val_match_mask, '5fold_pred_result_val.tsv')
-    Model.eval(models, ref_vec, X_test[test_data.index], test_match_result, test_match_mask, '5fold_pred_result_test.tsv')
+    Model.eval(models, ref_vec, X_test[test_data.index], test_match_result, test_match_mask,
+               '5fold_pred_result_test.tsv', prediction=prediction)
 
 
 if __name__=="__main__":
     # np.random.seed(42)
     ref = parse_biotope_dict()
     # single_model()
-    voting_model()
+    voting_model(prediction=True)
