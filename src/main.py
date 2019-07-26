@@ -1,3 +1,10 @@
+"""
+Train a CNN model to predict normalized habitats or phenotypes
+
+@ Date: 2019-07-15
+@ Author: OXPHOS
+"""
+
 from collections import Counter
 import math
 import numpy as np
@@ -24,7 +31,8 @@ def perfect_match(data):
 
     for i in data.index:
             s = data.input[i].split(' ', -1)
-            if 'cheese' in s[-1].lower() and (ref.name == s[0]).any():
+            if (not data.method[i]) and 'cheese' in s[-1].lower() \
+                    and (ref.name == s[0]).any():
                 matched_idx = ref.name[ref.name == s[0]].index[0]
                 data.pred[i] = ref.name[matched_idx]
                 data.method[i] = 'Cheeses'
@@ -38,19 +46,19 @@ def perfect_match(data):
 
 
 class Model:
-    def __init__(self, arg):
-        print("Loading reference dictionary =================================>")
-
+    def __init__(self, arg, fname=None):
         print("Initiating =========================================>")
         self.model = Sequential()
         self.model.add(Conv1D(filters=arg, kernel_size=5, padding='same',
                               input_shape=(entity_embedding_size, vector_len)))
-        self.model.add(MaxPooling1D(5))
+        self.model.add(MaxPooling1D(entity_embedding_size))
         # self.model.add(Dropout(0.2))
         # self.model.add(Conv1D(filters=arg, kernel_size=5, padding='same'))
         # self.model.add(MaxPooling1D(context_embedding_size//5))
         self.model.add(Dense(139))
         self.model.compile(loss='cosine_proximity', optimizer=SGD())
+
+        self.fname=fname
     
     def train(self, x_train, y_train, x_val=None, y_val=None):
         print("Training =========================================>")
@@ -70,6 +78,9 @@ class Model:
             y_val = np.expand_dims(y_val, axis=1)
             eval_loss = self.model.evaluate(x_val, y_val, verbose=0)
             print("*Eval loss: ", eval_loss)
+
+        if self.fname:
+            self.model.save(self.fname)
         return history.history['loss'][-1], history.history['val_loss'][-1], eval_loss
 
     @staticmethod
@@ -102,8 +113,6 @@ class Model:
         accuracy_total = sum(result.labels==result.pred) / len(result)
         print("CNN accuracy:", accuracy_cnn, " Total accuracy:", accuracy_total)
         return accuracy_cnn
-
-
 
     '''
     def cos_distance(y_true, y_pred):
@@ -179,7 +188,7 @@ def voting_model():
         np.random.shuffle(tmp_shuffle)
         train_match_mask = tmp_shuffle[:math.ceil(len(tmp_shuffle)*0.8)]
         val_match_mask = tmp_shuffle[math.ceil(len(tmp_shuffle)*0.8):]
-        models.append(Model(5000))
+        models.append(Model(10000, "Model_%s.h5" %j))
         loss = models[j].train(X[train_match_mask], Y[train_match_mask], X[val_match_mask], Y[val_match_mask])
 
     Model.eval(models, ref_vec, X, train_and_val_match_result, train_and_val_match_mask,
@@ -193,5 +202,3 @@ if __name__=="__main__":
     ref = parse_biotope_dict()
     # single_model()
     voting_model()
-
-

@@ -1,3 +1,11 @@
+"""
+Convert entities, labels and dictionary to vectors with vector space model
+Vector space model: http://bio.nlplab.org/, wikipedia-pubmed-and-PMC-w2v.bin
+
+@ Date: 2019-07-12
+@ Author: OXPHOS
+"""
+
 import gensim
 import numpy as np
 from sklearn.decomposition import PCA
