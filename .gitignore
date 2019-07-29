@@ -5,3 +5,7 @@ src/preprocessing/.ipynb_checkpoints/*
 .idea/*
 src/__pycache__/*
 *.npy
+Combine_result/*
+tmp_output/*
+ExampleCode.Python.zip
+exps
