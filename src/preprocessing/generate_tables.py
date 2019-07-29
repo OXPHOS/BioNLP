@@ -217,10 +217,10 @@ if __name__ == "__main__":
     # Parse reference dictionaries: OBT dict and NCBI Taxdump
     ref_obt, ref_tax = get_reference()
 
-    # process_by_datasets('BioNLP-OST-2019_BB-norm_train',
-    #                     abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_train/abbreviations.txt')
-    # process_by_datasets('BioNLP-OST-2019_BB-norm_dev',
-    #                     abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_dev/abbreviations.txt')
+    process_by_datasets('BioNLP-OST-2019_BB-norm_train',
+                        abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_train/abbreviations.txt')
+    process_by_datasets('BioNLP-OST-2019_BB-norm_dev',
+                        abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_dev/abbreviations.txt')
     process_by_datasets('BioNLP-OST-2019_BB-norm_test',
                         abbrfile='Ab3P/BioNLP-OST-2019_BB-norm_test/abbreviations.txt',
                         label=False)
