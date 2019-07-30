@@ -176,8 +176,8 @@ class Model:
             # Calculate accuracy
             accuracy_cnn = sum(result[result.method=='CNN'].labels==result[result.method=='CNN'].pred) \
                            / len(result[result.method=='CNN'])
-            accuracy_total = sum(result.labels==result.pred) / len(result)
-            print("CNN accuracy:", accuracy_cnn, " Total accuracy:", accuracy_total)
+            accuracy_overall = sum(result.labels==result.pred) / len(result)
+            print("CNN accuracy:", accuracy_cnn, " Overall accuracy:", accuracy_overall)
             return accuracy_cnn
 
     '''

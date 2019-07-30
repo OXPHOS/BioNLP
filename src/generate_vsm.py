@@ -9,6 +9,7 @@ Vector space model: http://bio.nlplab.org/, wikipedia-pubmed-and-PMC-w2v.bin
 import gensim
 import numpy as np
 from sklearn.decomposition import PCA
+from sklearn.preprocessing import StandardScaler
 from src import entity_embedding_size, context_embedding_size, vector_len
 from src.parse import *
 
@@ -20,8 +21,9 @@ def reduce_dimension(vectors):
     :param vectors: the matrix to be transformed
     :return: the transformed matrix
     """
+    scaler = StandardScaler()
     pca = PCA(n_components=0.95)
-    return pca.fit_transform(vectors)
+    return pca.fit_transform(scaler.fit_transform(vectors))
 
 
 def averaging_vectors(namelist, default_value=True):
