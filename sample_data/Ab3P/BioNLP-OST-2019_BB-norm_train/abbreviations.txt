@@ -1,0 +1,459 @@
+BB-norm-10492485	GRAS	480-484	generally recognized as safe	450-478
+BB-norm-10738994	MRSA	268-272	methicillin-resistant Staphylococcus aureus	98-141
+BB-norm-10738994	MRSA	268-272	methicillin-resistant Staphylococcus aureus	223-266
+BB-norm-10738994	MRSA	513-517	methicillin-resistant Staphylococcus aureus	98-141
+BB-norm-10738994	MRSA	513-517	methicillin-resistant Staphylococcus aureus	223-266
+BB-norm-10738994	MRSA	593-597	methicillin-resistant Staphylococcus aureus	98-141
+BB-norm-10738994	MRSA	593-597	methicillin-resistant Staphylococcus aureus	223-266
+BB-norm-10738994	MRSA	739-743	methicillin-resistant Staphylococcus aureus	98-141
+BB-norm-10738994	MRSA	739-743	methicillin-resistant Staphylococcus aureus	223-266
+BB-norm-10738994	MRSA	1090-1094	methicillin-resistant Staphylococcus aureus	98-141
+BB-norm-10738994	MRSA	1090-1094	methicillin-resistant Staphylococcus aureus	223-266
+BB-norm-10738994	MRSA	1583-1587	methicillin-resistant Staphylococcus aureus	98-141
+BB-norm-10738994	MRSA	1583-1587	methicillin-resistant Staphylococcus aureus	223-266
+BB-norm-10738994	SNF	318-321	skilled nursing facility	292-316
+BB-norm-10738994	SNF	532-535	skilled nursing facility	292-316
+BB-norm-10738994	SNF	628-631	skilled nursing facility	292-316
+BB-norm-10738994	SNF	1210-1213	skilled nursing facility	292-316
+BB-norm-10738994	SNF	1606-1609	skilled nursing facility	292-316
+BB-norm-10738994	FIGE	387-391	field-inversion gel electrophoresis	350-385
+BB-norm-10738994	FIGE	868-872	field-inversion gel electrophoresis	350-385
+BB-norm-10738994	FIGE	1098-1102	field-inversion gel electrophoresis	350-385
+BB-norm-10738994	FIGE	1229-1233	field-inversion gel electrophoresis	350-385
+BB-norm-10738994	FIGE	1549-1553	field-inversion gel electrophoresis	350-385
+BB-norm-10738994	REA	438-441	restriction endonuclease digestion analysis	393-436
+BB-norm-10738994	REA	873-876	restriction endonuclease digestion analysis	393-436
+BB-norm-10738994	REA	1103-1106	restriction endonuclease digestion analysis	393-436
+BB-norm-10738994	REA	1234-1237	restriction endonuclease digestion analysis	393-436
+BB-norm-10738994	REA	1263-1266	restriction endonuclease digestion analysis	393-436
+BB-norm-10738994	REA	1416-1419	restriction endonuclease digestion analysis	393-436
+BB-norm-10738994	REA	1554-1557	restriction endonuclease digestion analysis	393-436
+BB-norm-11410343	TeCB	146-150	2,2',5,5'-tetrachlorobiphenyl	11-40
+BB-norm-11410343	TeCB	146-150	2,2',5,5'-tetrachlorobiphenyl	115-144
+BB-norm-11410343	TeCB	405-409	2,2',5,5'-tetrachlorobiphenyl	11-40
+BB-norm-11410343	TeCB	405-409	2,2',5,5'-tetrachlorobiphenyl	115-144
+BB-norm-11410343	TeCB	637-641	2,2',5,5'-tetrachlorobiphenyl	11-40
+BB-norm-11410343	TeCB	637-641	2,2',5,5'-tetrachlorobiphenyl	115-144
+BB-norm-11410343	TeCB	836-840	2,2',5,5'-tetrachlorobiphenyl	11-40
+BB-norm-11410343	TeCB	836-840	2,2',5,5'-tetrachlorobiphenyl	115-144
+BB-norm-11410343	DPH	332-335	1,6-diphenyl-1,3,5-hexatriene	301-330
+BB-norm-11410343	DPH	504-507	1,6-diphenyl-1,3,5-hexatriene	301-330
+BB-norm-14645268	Xops	547-551	Xanthomonas outer proteins	519-545
+BB-norm-15358511	TSB	257-260	tryptic soy broth	48-65
+BB-norm-15358511	TSB	257-260	tryptic soy broth	238-255
+BB-norm-15358511	TSB	572-575	tryptic soy broth	48-65
+BB-norm-15358511	TSB	572-575	tryptic soy broth	238-255
+BB-norm-15358511	TSB	577-580	tryptic soy broth	48-65
+BB-norm-15358511	TSB	577-580	tryptic soy broth	238-255
+BB-norm-15358511	TSB	658-661	tryptic soy broth	48-65
+BB-norm-15358511	TSB	658-661	tryptic soy broth	238-255
+BB-norm-15358511	NB	282-284	nutrient broth	70-84
+BB-norm-15358511	NB	282-284	nutrient broth	266-280
+BB-norm-15358511	NB	501-503	nutrient broth	70-84
+BB-norm-15358511	NB	501-503	nutrient broth	266-280
+BB-norm-15358511	NB	590-592	nutrient broth	70-84
+BB-norm-15358511	NB	590-592	nutrient broth	266-280
+BB-norm-15358511	NB	704-706	nutrient broth	70-84
+BB-norm-15358511	NB	704-706	nutrient broth	266-280
+BB-norm-16263187	Lb.	166-169	Lactobacillus	11-24
+BB-norm-16263187	Lb.	166-169	Lactobacillus	151-164
+BB-norm-16263187	Lb.	859-862	Lactobacillus	11-24
+BB-norm-16263187	Lb.	859-862	Lactobacillus	151-164
+BB-norm-16263187	Lb.	1305-1308	Lactobacillus	11-24
+BB-norm-16263187	Lb.	1305-1308	Lactobacillus	151-164
+BB-norm-16263187	Lb.	1434-1437	Lactobacillus	11-24
+BB-norm-16263187	Lb.	1434-1437	Lactobacillus	151-164
+BB-norm-16263187	Lb.	1755-1758	Lactobacillus	11-24
+BB-norm-16263187	Lb.	1755-1758	Lactobacillus	151-164
+BB-norm-16432479	GASP	363-367	Gonococcal Antimicrobial Surveillance Program	316-361
+BB-norm-16432479	GASP	392-396	Gonococcal Antimicrobial Surveillance Program	316-361
+BB-norm-16990433	EHEC	485-489	enterohemorrhagic E. coli	458-483
+BB-norm-16990433	EHEC	875-879	enterohemorrhagic E. coli	458-483
+BB-norm-16990433	EHEC	1007-1011	enterohemorrhagic E. coli	458-483
+BB-norm-17237163	AHL	311-314	N-acyl homoserine lactone	284-309
+BB-norm-17237163	AHL	751-754	N-acyl homoserine lactone	284-309
+BB-norm-17237163	AHL	1107-1110	N-acyl homoserine lactone	284-309
+BB-norm-17237163	QS	338-340	quorum sensing	322-336
+BB-norm-17237163	QS	484-486	quorum sensing	322-336
+BB-norm-17237163	QS	879-881	quorum sensing	322-336
+BB-norm-17237163	QS	1032-1034	quorum sensing	322-336
+BB-norm-17237163	QS	1312-1314	quorum sensing	322-336
+BB-norm-17237163	QS	1436-1438	quorum sensing	322-336
+BB-norm-17237163	QS	1507-1509	quorum sensing	322-336
+BB-norm-17237163	QS	1782-1784	quorum sensing	322-336
+BB-norm-17237163	HCE	668-671	human corneal epithelial	642-666
+BB-norm-17237163	HCE	782-785	human corneal epithelial	642-666
+BB-norm-17237163	HCE	916-919	human corneal epithelial	642-666
+BB-norm-17237163	HCE	1477-1480	human corneal epithelial	642-666
+BB-norm-18687046	ICP	165-168	intracranial pressure monitor	10-39
+BB-norm-18687046	ICP	165-168	intracranial pressure monitor	134-163
+BB-norm-18687046	ICP	769-772	intracranial pressure monitor	10-39
+BB-norm-18687046	ICP	769-772	intracranial pressure monitor	134-163
+BB-norm-18687046	ICP	905-908	intracranial pressure monitor	10-39
+BB-norm-18687046	ICP	905-908	intracranial pressure monitor	134-163
+BB-norm-18687046	ICP	995-998	intracranial pressure monitor	10-39
+BB-norm-18687046	ICP	995-998	intracranial pressure monitor	134-163
+BB-norm-18687046	ICP	1155-1158	intracranial pressure monitor	10-39
+BB-norm-18687046	ICP	1155-1158	intracranial pressure monitor	134-163
+BB-norm-18687046	ICP	1333-1336	intracranial pressure monitor	10-39
+BB-norm-18687046	ICP	1333-1336	intracranial pressure monitor	134-163
+BB-norm-18687046	ICP	2168-2171	intracranial pressure monitor	10-39
+BB-norm-18687046	ICP	2168-2171	intracranial pressure monitor	134-163
+BB-norm-18687046	CNS	471-474	central nervous system	55-77
+BB-norm-18687046	CNS	471-474	central nervous system	447-469
+BB-norm-18687046	CNS	1579-1582	central nervous system	55-77
+BB-norm-18687046	CNS	1579-1582	central nervous system	447-469
+BB-norm-18687046	CNS	1687-1690	central nervous system	55-77
+BB-norm-18687046	CNS	1687-1690	central nervous system	447-469
+BB-norm-18687046	CNS	2242-2245	central nervous system	55-77
+BB-norm-18687046	CNS	2242-2245	central nervous system	447-469
+BB-norm-18687046	MDR	560-563	multi-drug resistant	538-558
+BB-norm-18687046	MDR	1795-1798	multi-drug resistant	538-558
+BB-norm-18687046	MDR	2017-2020	multi-drug resistant	538-558
+BB-norm-18687046	MDR	2115-2118	multi-drug resistant	538-558
+BB-norm-18687046	MDR	2289-2292	multi-drug resistant	538-558
+BB-norm-18687046	TICU	640-644	trauma intensive care unit	612-638
+BB-norm-18687046	ISS	1099-1102	Injury Severity Score	1076-1097
+BB-norm-18687046	ISS	1319-1322	Injury Severity Score	1076-1097
+BB-norm-18687046	GCS	1125-1128	Glasgow Coma Scale	1105-1123
+BB-norm-18687046	GCS	1324-1327	Glasgow Coma Scale	1105-1123
+BB-norm-18687046	BE	1150-1152	base excess	1137-1148
+BB-norm-18687046	BE	1329-1331	base excess	1137-1148
+BB-norm-18687046	AIS	1245-1248	Abbreviated Injury Score	1219-1243
+BB-norm-18687046	AIS	1261-1264	Abbreviated Injury Score	1219-1243
+BB-norm-18687046	AIS	1394-1397	Abbreviated Injury Score	1219-1243
+BB-norm-18845825	NTHi	164-168	nontypeable Haemophilus influenzae	26-60
+BB-norm-18845825	NTHi	164-168	nontypeable Haemophilus influenzae	128-162
+BB-norm-18845825	NTHi	386-390	nontypeable Haemophilus influenzae	26-60
+BB-norm-18845825	NTHi	386-390	nontypeable Haemophilus influenzae	128-162
+BB-norm-18845825	NTHi	428-432	nontypeable Haemophilus influenzae	26-60
+BB-norm-18845825	NTHi	428-432	nontypeable Haemophilus influenzae	128-162
+BB-norm-18845825	STs	294-297	sequence types	278-292
+BB-norm-18845825	STs	322-325	sequence types	278-292
+BB-norm-18845825	STs	391-394	sequence types	278-292
+BB-norm-19049879	MyD88	36-41	Myeloid differentiation factor 88	89-122
+BB-norm-19049879	MyD88	124-129	Myeloid differentiation factor 88	89-122
+BB-norm-19049879	MyD88	312-317	Myeloid differentiation factor 88	89-122
+BB-norm-19049879	MyD88	792-797	Myeloid differentiation factor 88	89-122
+BB-norm-19049879	MyD88	900-905	Myeloid differentiation factor 88	89-122
+BB-norm-19049879	MyD88	1188-1193	Myeloid differentiation factor 88	89-122
+BB-norm-19049879	MyD88	1370-1375	Myeloid differentiation factor 88	89-122
+BB-norm-19049879	NF-kappaB	260-269	nuclear factor-kappaB	237-258
+BB-norm-19049879	UTR	446-449	untranslated region	425-444
+BB-norm-19049879	UTR	475-478	untranslated region	425-444
+BB-norm-19049879	ORF	515-518	open reading frame	495-513
+BB-norm-19049879	TIR	658-661	Toll/IL-1R	646-656
+BB-norm-19175621	ESBL	362-366	extended-spectrum beta-lactamase	14-46
+BB-norm-19175621	ESBL	362-366	extended-spectrum beta-lactamase	328-360
+BB-norm-19175621	ESBL	414-418	extended-spectrum beta-lactamase	14-46
+BB-norm-19175621	ESBL	414-418	extended-spectrum beta-lactamase	328-360
+BB-norm-19175621	ESBL	918-922	extended-spectrum beta-lactamase	14-46
+BB-norm-19175621	ESBL	918-922	extended-spectrum beta-lactamase	328-360
+BB-norm-19396518	CSF	168-171	cerebrospinal fluid	147-166
+BB-norm-19396518	CSF	605-608	cerebrospinal fluid	147-166
+BB-norm-19396518	CSF	815-818	cerebrospinal fluid	147-166
+BB-norm-19396518	CSF	1271-1274	cerebrospinal fluid	147-166
+BB-norm-19396518	PCR	100-103	polymerase chain reaction	246-271
+BB-norm-19396518	PCR	273-276	polymerase chain reaction	246-271
+BB-norm-19396518	PCR	690-693	polymerase chain reaction	246-271
+BB-norm-19396518	PCR	822-825	polymerase chain reaction	246-271
+BB-norm-19396518	PCR	1115-1118	polymerase chain reaction	246-271
+BB-norm-19396518	PCR	1225-1228	polymerase chain reaction	246-271
+BB-norm-19396518	PCR	1443-1446	polymerase chain reaction	246-271
+BB-norm-19396518	PCR	1605-1608	polymerase chain reaction	246-271
+BB-norm-19501788	Fur	149-152	Ferric uptake regulator	124-147
+BB-norm-19501788	Fur	425-428	Ferric uptake regulator	124-147
+BB-norm-19501788	Fur	667-670	Ferric uptake regulator	124-147
+BB-norm-19501788	Fur	1351-1354	Ferric uptake regulator	124-147
+BB-norm-19622846	MRSA	45-49	methicillin-resistant Staphylococcus aureus	195-238
+BB-norm-19622846	MRSA	240-244	methicillin-resistant Staphylococcus aureus	195-238
+BB-norm-19622846	MRSA	535-539	methicillin-resistant Staphylococcus aureus	195-238
+BB-norm-19622846	MRSA	739-743	methicillin-resistant Staphylococcus aureus	195-238
+BB-norm-19622846	MRSA	948-952	methicillin-resistant Staphylococcus aureus	195-238
+BB-norm-20005916	PNS	206-209	peripheral nervous system	179-204
+BB-norm-20005916	PNS	317-320	peripheral nervous system	179-204
+BB-norm-20005916	PNS	1107-1110	peripheral nervous system	179-204
+BB-norm-20005916	PNS	2110-2113	peripheral nervous system	179-204
+BB-norm-20005916	RTK	418-421	receptor tyrosine kinase	392-416
+BB-norm-20005916	RTK	1283-1286	receptor tyrosine kinase	392-416
+BB-norm-20005916	RTK	1976-1979	receptor tyrosine kinase	392-416
+BB-norm-20005916	ERK1/2	722-728	extracellular signal-regulated kinase-1/2	679-720
+BB-norm-21498521	LPS	347-350	lipopolysaccharide	33-51
+BB-norm-21498521	LPS	347-350	lipopolysaccharide	327-345
+BB-norm-21498521	LPS	604-607	lipopolysaccharide	33-51
+BB-norm-21498521	LPS	604-607	lipopolysaccharide	327-345
+BB-norm-21917915	Hb	184-186	hemoglobin	21-31
+BB-norm-21917915	Hb	184-186	hemoglobin	172-182
+BB-norm-21917915	Hb	252-254	hemoglobin	21-31
+BB-norm-21917915	Hb	252-254	hemoglobin	172-182
+BB-norm-21917915	Hb	404-406	hemoglobin	21-31
+BB-norm-21917915	Hb	404-406	hemoglobin	172-182
+BB-norm-21917915	Hb	487-489	hemoglobin	21-31
+BB-norm-21917915	Hb	487-489	hemoglobin	172-182
+BB-norm-21917915	Hb	601-603	hemoglobin	21-31
+BB-norm-21917915	Hb	601-603	hemoglobin	172-182
+BB-norm-21917915	Hb	659-661	hemoglobin	21-31
+BB-norm-21917915	Hb	659-661	hemoglobin	172-182
+BB-norm-21917915	Hb	689-691	hemoglobin	21-31
+BB-norm-21917915	Hb	689-691	hemoglobin	172-182
+BB-norm-21917915	Hb	744-746	hemoglobin	21-31
+BB-norm-21917915	Hb	744-746	hemoglobin	172-182
+BB-norm-21917915	Hb	782-784	hemoglobin	21-31
+BB-norm-21917915	Hb	782-784	hemoglobin	172-182
+BB-norm-21917915	Hb	924-926	hemoglobin	21-31
+BB-norm-21917915	Hb	924-926	hemoglobin	172-182
+BB-norm-21917915	Hb	978-980	hemoglobin	21-31
+BB-norm-21917915	Hb	978-980	hemoglobin	172-182
+BB-norm-21917915	Isd	87-90	iron-regulated surface determinant	522-556
+BB-norm-21917915	Isd	517-520	iron-regulated surface determinant	522-556
+BB-norm-21917915	Isd	567-570	iron-regulated surface determinant	522-556
+BB-norm-21924022	H.pylori	140-148	Helicobacter pylori	119-138
+BB-norm-21924022	H.pylori	206-214	Helicobacter pylori	119-138
+BB-norm-21924022	H.pylori	470-478	Helicobacter pylori	119-138
+BB-norm-21924022	H.pylori	741-749	Helicobacter pylori	119-138
+BB-norm-21924022	H.pylori	936-944	Helicobacter pylori	119-138
+BB-norm-21924022	H.pylori	1381-1389	Helicobacter pylori	119-138
+BB-norm-21924022	H.pylori	1713-1721	Helicobacter pylori	119-138
+BB-norm-21924022	RUT	364-367	rapid urease test	345-362
+BB-norm-21924022	RUT	418-421	rapid urease test	345-362
+BB-norm-21924022	CagA	600-604	cytotoxin associated gene A protein	563-598
+BB-norm-21924022	CagA	1111-1115	cytotoxin associated gene A protein	563-598
+BB-norm-21924022	CagA	1218-1222	cytotoxin associated gene A protein	563-598
+BB-norm-21924022	CagA	1346-1350	cytotoxin associated gene A protein	563-598
+BB-norm-21924022	CagA	1666-1670	cytotoxin associated gene A protein	563-598
+BB-norm-21924022	VacA	628-632	vacuolating toxin A	607-626
+BB-norm-21924022	VacA	1163-1167	vacuolating toxin A	607-626
+BB-norm-21924022	VacA	1232-1236	vacuolating toxin A	607-626
+BB-norm-21924022	Hsp60	666-671	heat shock protein 60	643-664
+BB-norm-23702192	CDI	133-136	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	133-136	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	199-202	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	199-202	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	375-378	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	375-378	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	426-429	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	426-429	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	583-586	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	583-586	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	713-716	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	713-716	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	864-867	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	864-867	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	1312-1315	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	1312-1315	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	1594-1597	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	1594-1597	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	1754-1757	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	1754-1757	Clostridium difficile infection	100-131
+BB-norm-23702192	CDI	1982-1985	Clostridium difficile infection	67-98
+BB-norm-23702192	CDI	1982-1985	Clostridium difficile infection	100-131
+BB-norm-23704121	CDI	174-177	Clostridium difficile infection	141-172
+BB-norm-23704121	CDI	284-287	Clostridium difficile infection	141-172
+BB-norm-23704121	CDI	411-414	Clostridium difficile infection	141-172
+BB-norm-23704121	CDI	478-481	Clostridium difficile infection	141-172
+BB-norm-23704121	CDI	979-982	Clostridium difficile infection	141-172
+BB-norm-23704121	CDI	1108-1111	Clostridium difficile infection	141-172
+BB-norm-23704121	CDI	1378-1381	Clostridium difficile infection	141-172
+BB-norm-23855904	MLST	764-768	Multi Locus Sequence Typing	735-762
+BB-norm-24198224	PFGE	534-538	pulsed-field gel electrophoresis	500-532
+BB-norm-24198224	PFGE	719-723	pulsed-field gel electrophoresis	500-532
+BB-norm-24361838	MOI	899-902	multiplicity of infection	872-897
+BB-norm-24678646	MRSA	82-86	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	82-86	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	286-290	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	286-290	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	553-557	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	553-557	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	658-662	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	658-662	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1268-1272	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1268-1272	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1413-1417	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1413-1417	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1523-1527	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1523-1527	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1599-1603	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1599-1603	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1755-1759	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1755-1759	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1950-1954	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1950-1954	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	VRE	127-130	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	127-130	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	330-333	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	330-333	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	562-565	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	562-565	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	834-837	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	834-837	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1290-1293	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1290-1293	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1454-1457	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1454-1457	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1532-1535	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1532-1535	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1651-1654	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1651-1654	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1959-1962	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1959-1962	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	MRSA	82-86	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	82-86	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	286-290	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	286-290	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	553-557	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	553-557	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	658-662	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	658-662	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1268-1272	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1268-1272	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1413-1417	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1413-1417	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1523-1527	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1523-1527	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1599-1603	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1599-1603	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1755-1759	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1755-1759	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	MRSA	1950-1954	methicillin-resistant Staphylococcus aureus	37-80
+BB-norm-24678646	MRSA	1950-1954	methicillin-resistant Staphylococcus aureus	241-284
+BB-norm-24678646	VRE	127-130	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	127-130	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	330-333	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	330-333	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	562-565	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	562-565	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	834-837	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	834-837	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1290-1293	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1290-1293	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1454-1457	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1454-1457	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1532-1535	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1532-1535	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1651-1654	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1651-1654	vancomycin-resistant Enterococcus	295-328
+BB-norm-24678646	VRE	1959-1962	vancomycin-resistant Enterococcus	92-125
+BB-norm-24678646	VRE	1959-1962	vancomycin-resistant Enterococcus	295-328
+BB-norm-24831788	HTS	190-193	high throughput screening	111-136
+BB-norm-24831788	HTS	190-193	high throughput screening	163-188
+BB-norm-24831788	HTS	346-349	high throughput screening	111-136
+BB-norm-24831788	HTS	346-349	high throughput screening	163-188
+BB-norm-24831788	HTS	523-526	high throughput screening	111-136
+BB-norm-24831788	HTS	523-526	high throughput screening	163-188
+BB-norm-24831788	HTS	956-959	high throughput screening	111-136
+BB-norm-24831788	HTS	956-959	high throughput screening	163-188
+BB-norm-24831788	HTS	1218-1221	high throughput screening	111-136
+BB-norm-24831788	HTS	1218-1221	high throughput screening	163-188
+BB-norm-25098305	URTD	178-182	Upper respiratory tract disease	145-176
+BB-norm-25098305	URTD	391-395	Upper respiratory tract disease	145-176
+BB-norm-25098305	URTD	541-545	Upper respiratory tract disease	145-176
+BB-norm-25098305	URTD	1064-1068	Upper respiratory tract disease	145-176
+BB-norm-25098305	URTD	1119-1123	Upper respiratory tract disease	145-176
+BB-norm-25562320	Mtb	487-490	Mycobacterium tuberculosis	66-92
+BB-norm-25562320	Mtb	487-490	Mycobacterium tuberculosis	459-485
+BB-norm-25562320	Mtb	751-754	Mycobacterium tuberculosis	66-92
+BB-norm-25562320	Mtb	751-754	Mycobacterium tuberculosis	459-485
+BB-norm-25562320	Mtb	788-791	Mycobacterium tuberculosis	66-92
+BB-norm-25562320	Mtb	788-791	Mycobacterium tuberculosis	459-485
+BB-norm-25562320	Mtb	893-896	Mycobacterium tuberculosis	66-92
+BB-norm-25562320	Mtb	893-896	Mycobacterium tuberculosis	459-485
+BB-norm-25562320	Mtb	1024-1027	Mycobacterium tuberculosis	66-92
+BB-norm-25562320	Mtb	1024-1027	Mycobacterium tuberculosis	459-485
+BB-norm-25562320	Mtb	1105-1108	Mycobacterium tuberculosis	66-92
+BB-norm-25562320	Mtb	1105-1108	Mycobacterium tuberculosis	459-485
+BB-norm-25634638	HCN	42-45	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	42-45	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	157-160	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	157-160	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	872-875	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	872-875	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	940-943	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	940-943	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	1019-1022	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	1019-1022	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	1278-1281	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	1278-1281	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	42-45	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	42-45	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	157-160	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	157-160	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	872-875	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	872-875	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	940-943	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	940-943	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	1019-1022	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	1019-1022	hydrogen cyanide	139-155
+BB-norm-25634638	HCN	1278-1281	hydrogen cyanide	24-40
+BB-norm-25634638	HCN	1278-1281	hydrogen cyanide	139-155
+BB-norm-3074181	FMOX	213-217	Flomoxef	203-211
+BB-norm-9535771	MBP	170-173	maltose-binding protein	145-168
+BB-norm-9535771	MBP	249-252	maltose-binding protein	145-168
+BB-norm-9535771	MBP	583-586	maltose-binding protein	145-168
+BB-norm-9535771	MBP	657-660	maltose-binding protein	145-168
+BB-norm-9643457	NAP	196-199	neutrophil alkaline phosphatase	31-62
+BB-norm-9643457	NAP	196-199	neutrophil alkaline phosphatase	163-194
+BB-norm-9643457	NAP	346-349	neutrophil alkaline phosphatase	31-62
+BB-norm-9643457	NAP	346-349	neutrophil alkaline phosphatase	163-194
+BB-norm-9643457	NAP	464-467	neutrophil alkaline phosphatase	31-62
+BB-norm-9643457	NAP	464-467	neutrophil alkaline phosphatase	163-194
+BB-norm-9643457	NAP	803-806	neutrophil alkaline phosphatase	31-62
+BB-norm-9643457	NAP	803-806	neutrophil alkaline phosphatase	163-194
+BB-norm-9643457	NAP	1110-1113	neutrophil alkaline phosphatase	31-62
+BB-norm-9643457	NAP	1110-1113	neutrophil alkaline phosphatase	163-194
+BB-norm-9643457	NAP	1153-1156	neutrophil alkaline phosphatase	31-62
+BB-norm-9643457	NAP	1153-1156	neutrophil alkaline phosphatase	163-194
+BB-norm-9643457	NAP	1399-1402	neutrophil alkaline phosphatase	31-62
+BB-norm-9643457	NAP	1399-1402	neutrophil alkaline phosphatase	163-194
+BB-norm-9643457	NAP	1518-1521	neutrophil alkaline phosphatase	31-62
+BB-norm-9643457	NAP	1518-1521	neutrophil alkaline phosphatase	163-194
+BB-norm-9798026	HIV	287-290	human immunodeficiency virus	109-137
+BB-norm-9798026	HIV	287-290	human immunodeficiency virus	257-285
+BB-norm-9798026	HIV	1012-1015	human immunodeficiency virus	109-137
+BB-norm-9798026	HIV	1012-1015	human immunodeficiency virus	257-285
+BB-norm-9798026	HIV	1205-1208	human immunodeficiency virus	109-137
+BB-norm-9798026	HIV	1205-1208	human immunodeficiency virus	257-285
+BB-norm-9864452	APase	112-117	Alkaline phosphatase	90-110
+BB-norm-9864452	APase	603-608	Alkaline phosphatase	90-110
+BB-norm-F-18524407-000	EPS	44-47	exopolysaccharides	24-42
+BB-norm-F-18524407-000	EPS	44-47	exopolysaccharides	1113-1131
+BB-norm-F-18524407-000	EPS	257-260	exopolysaccharides	24-42
+BB-norm-F-18524407-000	EPS	257-260	exopolysaccharides	1113-1131
+BB-norm-F-18524407-000	EPS	335-338	exopolysaccharides	24-42
+BB-norm-F-18524407-000	EPS	335-338	exopolysaccharides	1113-1131
+BB-norm-F-18524407-000	EPS	1610-1613	exopolysaccharides	24-42
+BB-norm-F-18524407-000	EPS	1610-1613	exopolysaccharides	1113-1131
+BB-norm-F-22177851-011	DMTS	286-290	dimethyl trisulfide	265-284
+BB-norm-F-23224222-000	LAB	553-556	lactic acid bacteria	531-551
+BB-norm-F-23224222-000	LAB	661-664	lactic acid bacteria	531-551
+BB-norm-F-23224222-000	DGGE	1660-1664	denaturing gradient gel electrophoresis	1619-1658
+BB-norm-F-23224222-000	DGGE	1798-1802	denaturing gradient gel electrophoresis	1619-1658
+BB-norm-F-23224222-001	LAB	186-189	lactic acid bacteria	164-184
+BB-norm-F-23224222-001	LAB	374-377	lactic acid bacteria	164-184
+BB-norm-F-23224222-003	NSLAB	264-269	non-starter lactic acid bacteria	230-262
+BB-norm-F-23224222-003	NSLAB	361-366	non-starter lactic acid bacteria	230-262
+BB-norm-F-23224222-003	NSLAB	495-500	non-starter lactic acid bacteria	230-262
+BB-norm-F-23224222-003	NSLAB	555-560	non-starter lactic acid bacteria	230-262
+BB-norm-F-23224222-003	NSLAB	686-691	non-starter lactic acid bacteria	230-262
+LICENSE	NLM	3929-3932	National Library of Medicine	3899-3927
+LICENSE	NLM	3929-3932	National Library of Medicine	5409-5437
+LICENSE	NLM	3936-3939	National Library of Medicine	3899-3927
+LICENSE	NLM	3936-3939	National Library of Medicine	5409-5437
+LICENSE	NLM	4224-4227	National Library of Medicine	3899-3927
+LICENSE	NLM	4224-4227	National Library of Medicine	5409-5437
+LICENSE	NLM	4403-4406	National Library of Medicine	3899-3927
+LICENSE	NLM	4403-4406	National Library of Medicine	5409-5437
+LICENSE	NLM	5390-5393	National Library of Medicine	3899-3927
+LICENSE	NLM	5390-5393	National Library of Medicine	5409-5437
+LICENSE	NLM	3929-3932	National Library of Medicine	3899-3927
+LICENSE	NLM	3929-3932	National Library of Medicine	5409-5437
+LICENSE	NLM	3936-3939	National Library of Medicine	3899-3927
+LICENSE	NLM	3936-3939	National Library of Medicine	5409-5437
+LICENSE	NLM	4224-4227	National Library of Medicine	3899-3927
+LICENSE	NLM	4224-4227	National Library of Medicine	5409-5437
+LICENSE	NLM	4403-4406	National Library of Medicine	3899-3927
+LICENSE	NLM	4403-4406	National Library of Medicine	5409-5437
+LICENSE	NLM	5390-5393	National Library of Medicine	3899-3927
+LICENSE	NLM	5390-5393	National Library of Medicine	5409-5437
+README	BB-norm	96-103	Bacteria Biotopes named entity normalization	50-94
+README	BB-norm	642-649	Bacteria Biotopes named entity normalization	50-94
+README	BB-norm	660-667	Bacteria Biotopes named entity normalization	50-94

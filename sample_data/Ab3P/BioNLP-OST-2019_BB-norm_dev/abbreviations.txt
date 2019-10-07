@@ -1,0 +1,181 @@
+BB-norm-10496597	MALT	255-259	mucosal-associated lymphoid tissue	219-253
+BB-norm-10496597	MALT	552-556	mucosal-associated lymphoid tissue	219-253
+BB-norm-10496597	MALT	672-676	mucosal-associated lymphoid tissue	219-253
+BB-norm-10496597	MALT	1055-1059	mucosal-associated lymphoid tissue	219-253
+BB-norm-10496597	MALT	2034-2038	mucosal-associated lymphoid tissue	219-253
+BB-norm-10496597	PCR	419-422	polymerase chain reaction	72-97
+BB-norm-10496597	PCR	419-422	polymerase chain reaction	392-417
+BB-norm-10496597	PCR	495-498	polymerase chain reaction	72-97
+BB-norm-10496597	PCR	495-498	polymerase chain reaction	392-417
+BB-norm-10496597	PCR	887-890	polymerase chain reaction	72-97
+BB-norm-10496597	PCR	887-890	polymerase chain reaction	392-417
+BB-norm-10496597	PCR	1916-1919	polymerase chain reaction	72-97
+BB-norm-10496597	PCR	1916-1919	polymerase chain reaction	392-417
+BB-norm-1356998	PCR	303-306	polymerase chain reaction	276-301
+BB-norm-1356998	PCR	503-506	polymerase chain reaction	276-301
+BB-norm-1356998	PCR	829-832	polymerase chain reaction	276-301
+BB-norm-1356998	PCR	948-951	polymerase chain reaction	276-301
+BB-norm-1356998	RFLP	367-371	restriction endonuclease fragment length polymorphism	312-365
+BB-norm-1356998	RFLP	833-837	restriction endonuclease fragment length polymorphism	312-365
+BB-norm-1356998	RFLP	1072-1076	restriction endonuclease fragment length polymorphism	312-365
+BB-norm-15293611	CF	175-177	cystic fibrosis	65-80
+BB-norm-15293611	CF	175-177	cystic fibrosis	158-173
+BB-norm-15293611	CF	361-363	cystic fibrosis	65-80
+BB-norm-15293611	CF	361-363	cystic fibrosis	158-173
+BB-norm-15618837	C-UBT	686-691	C-urea breath test	666-684
+BB-norm-15618837	C-UBT	746-751	C-urea breath test	666-684
+BB-norm-15618837	C-UBT	1203-1208	C-urea breath test	666-684
+BB-norm-15618837	CI	895-897	confidence interval	874-893
+BB-norm-15618837	CI	976-978	confidence interval	874-893
+BB-norm-15618837	CI	1036-1038	confidence interval	874-893
+BB-norm-15618837	CI	1135-1137	confidence interval	874-893
+BB-norm-15618837	CI	1335-1337	confidence interval	874-893
+BB-norm-16514151	MBD	70-73	metal-binding domain	48-68
+BB-norm-16514151	MBD	70-73	metal-binding domain	318-338
+BB-norm-16514151	MBD	340-343	metal-binding domain	48-68
+BB-norm-16514151	MBD	340-343	metal-binding domain	318-338
+BB-norm-16514151	MBD	446-449	metal-binding domain	48-68
+BB-norm-16514151	MBD	446-449	metal-binding domain	318-338
+BB-norm-16514151	MBD	651-654	metal-binding domain	48-68
+BB-norm-16514151	MBD	651-654	metal-binding domain	318-338
+BB-norm-16514151	MBD	756-759	metal-binding domain	48-68
+BB-norm-16514151	MBD	756-759	metal-binding domain	318-338
+BB-norm-16514151	MBD	786-789	metal-binding domain	48-68
+BB-norm-16514151	MBD	786-789	metal-binding domain	318-338
+BB-norm-16514151	MBD	875-878	metal-binding domain	48-68
+BB-norm-16514151	MBD	875-878	metal-binding domain	318-338
+BB-norm-16514151	MBD	1006-1009	metal-binding domain	48-68
+BB-norm-16514151	MBD	1006-1009	metal-binding domain	318-338
+BB-norm-16514151	MBD	1082-1085	metal-binding domain	48-68
+BB-norm-16514151	MBD	1082-1085	metal-binding domain	318-338
+BB-norm-16514151	MBD	1110-1113	metal-binding domain	48-68
+BB-norm-16514151	MBD	1110-1113	metal-binding domain	318-338
+BB-norm-16514151	MBD	1249-1252	metal-binding domain	48-68
+BB-norm-16514151	MBD	1249-1252	metal-binding domain	318-338
+BB-norm-16514151	mer	120-123	mercury resistance	120-138
+BB-norm-16514151	mer	140-143	mercury resistance	120-138
+BB-norm-16514151	mer	379-382	mercury resistance	120-138
+BB-norm-16514151	mer	764-767	mercury resistance	120-138
+BB-norm-16514151	mer	920-923	mercury resistance	120-138
+BB-norm-16514151	mer	943-946	mercury resistance	120-138
+BB-norm-16514151	MBD	70-73	metal-binding domain	48-68
+BB-norm-16514151	MBD	70-73	metal-binding domain	318-338
+BB-norm-16514151	MBD	340-343	metal-binding domain	48-68
+BB-norm-16514151	MBD	340-343	metal-binding domain	318-338
+BB-norm-16514151	MBD	446-449	metal-binding domain	48-68
+BB-norm-16514151	MBD	446-449	metal-binding domain	318-338
+BB-norm-16514151	MBD	651-654	metal-binding domain	48-68
+BB-norm-16514151	MBD	651-654	metal-binding domain	318-338
+BB-norm-16514151	MBD	756-759	metal-binding domain	48-68
+BB-norm-16514151	MBD	756-759	metal-binding domain	318-338
+BB-norm-16514151	MBD	786-789	metal-binding domain	48-68
+BB-norm-16514151	MBD	786-789	metal-binding domain	318-338
+BB-norm-16514151	MBD	875-878	metal-binding domain	48-68
+BB-norm-16514151	MBD	875-878	metal-binding domain	318-338
+BB-norm-16514151	MBD	1006-1009	metal-binding domain	48-68
+BB-norm-16514151	MBD	1006-1009	metal-binding domain	318-338
+BB-norm-16514151	MBD	1082-1085	metal-binding domain	48-68
+BB-norm-16514151	MBD	1082-1085	metal-binding domain	318-338
+BB-norm-16514151	MBD	1110-1113	metal-binding domain	48-68
+BB-norm-16514151	MBD	1110-1113	metal-binding domain	318-338
+BB-norm-16514151	MBD	1249-1252	metal-binding domain	48-68
+BB-norm-16514151	MBD	1249-1252	metal-binding domain	318-338
+BB-norm-18789156	LVS	803-806	Live Vaccine Strain	782-801
+BB-norm-18789156	LVS	821-824	Live Vaccine Strain	782-801
+BB-norm-18789156	LVS	981-984	Live Vaccine Strain	782-801
+BB-norm-18789156	LVS	1192-1195	Live Vaccine Strain	782-801
+BB-norm-18789156	LVS	1327-1330	Live Vaccine Strain	782-801
+BB-norm-18789156	LVS	1499-1502	Live Vaccine Strain	782-801
+BB-norm-18789156	LVS	2117-2120	Live Vaccine Strain	782-801
+BB-norm-18789156	EF-Tu	1081-1086	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	1081-1086	elongation factor Tu	1059-1079
+BB-norm-18789156	EF-Tu	1331-1336	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	1331-1336	elongation factor Tu	1059-1079
+BB-norm-18789156	EF-Tu	1419-1424	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	1419-1424	elongation factor Tu	1059-1079
+BB-norm-18789156	EF-Tu	1474-1479	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	1474-1479	elongation factor Tu	1059-1079
+BB-norm-18789156	EF-Tu	1640-1645	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	1640-1645	elongation factor Tu	1059-1079
+BB-norm-18789156	EF-Tu	1728-1733	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	1728-1733	elongation factor Tu	1059-1079
+BB-norm-18789156	EF-Tu	1917-1922	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	1917-1922	elongation factor Tu	1059-1079
+BB-norm-18789156	EF-Tu	2304-2309	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	2304-2309	elongation factor Tu	1059-1079
+BB-norm-18789156	EF-Tu	2443-2448	elongation factor Tu	152-172
+BB-norm-18789156	EF-Tu	2443-2448	elongation factor Tu	1059-1079
+BB-norm-19004249	MAGs	174-178	monoacylglycerols	73-90
+BB-norm-19004249	MAGs	174-178	monoacylglycerols	155-172
+BB-norm-19004249	MAGs	415-419	monoacylglycerols	73-90
+BB-norm-19004249	MAGs	415-419	monoacylglycerols	155-172
+BB-norm-20174624	HMDM	840-844	human monocyte-derived macrophages	804-838
+BB-norm-20174624	HMDM	916-920	human monocyte-derived macrophages	804-838
+BB-norm-20174624	PS	1274-1276	phosphatidylserine	1254-1272
+BB-norm-20174624	ROS	86-89	reactive oxygen species	1298-1321
+BB-norm-20174624	ROS	1323-1326	reactive oxygen species	1298-1321
+BB-norm-20174624	ROS	1499-1502	reactive oxygen species	1298-1321
+BB-norm-20174624	ROS	1806-1809	reactive oxygen species	1298-1321
+BB-norm-20174624	ROS	1962-1965	reactive oxygen species	1298-1321
+BB-norm-20580604	LcS	313-316	Lactobacillus casei strain Shirota	58-92
+BB-norm-20580604	LcS	313-316	Lactobacillus casei strain Shirota	277-311
+BB-norm-20580604	LcS	1054-1057	Lactobacillus casei strain Shirota	58-92
+BB-norm-20580604	LcS	1054-1057	Lactobacillus casei strain Shirota	277-311
+BB-norm-21270066	LGV	136-139	lymphogranuloma venereum	110-134
+BB-norm-21270066	LGV	340-343	lymphogranuloma venereum	110-134
+BB-norm-21270066	LGV	736-739	lymphogranuloma venereum	110-134
+BB-norm-21270066	LGV	780-783	lymphogranuloma venereum	110-134
+BB-norm-21270066	MSM	257-260	men who have sex with men	230-255
+BB-norm-21270066	MSM	347-350	men who have sex with men	230-255
+BB-norm-21270066	MSM	1032-1035	men who have sex with men	230-255
+BB-norm-21270066	MSM	1113-1116	men who have sex with men	230-255
+BB-norm-21543877	APH	506-509	aminoglycoside phosphotransferase	471-504
+BB-norm-25114119	PI-LPS	305-311	phase I lipopolysaccharide	277-303
+BB-norm-25114119	MAb	343-346	monoclonal antibody	50-69
+BB-norm-25114119	MAb	343-346	monoclonal antibody	322-341
+BB-norm-25114119	MAb	443-446	monoclonal antibody	50-69
+BB-norm-25114119	MAb	443-446	monoclonal antibody	322-341
+BB-norm-25114119	MAb	1792-1795	monoclonal antibody	50-69
+BB-norm-25114119	MAb	1792-1795	monoclonal antibody	322-341
+BB-norm-25114119	MAb	1908-1911	monoclonal antibody	50-69
+BB-norm-25114119	MAb	1908-1911	monoclonal antibody	322-341
+BB-norm-25114119	Abs	501-504	antibodies	489-499
+BB-norm-9521147	LPSs	618-622	lipopolysaccharides	597-616
+BB-norm-9521147	LPSs	1003-1007	lipopolysaccharides	597-616
+BB-norm-9521147	LPSs	1092-1096	lipopolysaccharides	597-616
+BB-norm-9521147	LPSs	1503-1507	lipopolysaccharides	597-616
+BB-norm-9521147	LPSs	1543-1547	lipopolysaccharides	597-616
+BB-norm-9553794	LAB	245-248	lactic acid bacteria	223-243
+BB-norm-9553794	LAB	597-600	lactic acid bacteria	223-243
+BB-norm-9553794	LAB	815-818	lactic acid bacteria	223-243
+BB-norm-9553794	LAB	1318-1321	lactic acid bacteria	223-243
+BB-norm-9553794	LAB	1422-1425	lactic acid bacteria	223-243
+BB-norm-9553794	LAB	2107-2110	lactic acid bacteria	223-243
+BB-norm-9745160	PPI	426-429	proton pump inhibitor	403-424
+BB-norm-9745160	PPI	588-591	proton pump inhibitor	403-424
+BB-norm-9745160	PPI	1999-2002	proton pump inhibitor	403-424
+BB-norm-F-20167385-001	CNC	214-217	coagulase-negative cocci	188-212
+BB-norm-F-20167385-011	LAB	43-46	lactic acid bacterial group	14-41
+LICENSE	NLM	1985-1988	National Library of Medicine	1955-1983
+LICENSE	NLM	1985-1988	National Library of Medicine	3465-3493
+LICENSE	NLM	1992-1995	National Library of Medicine	1955-1983
+LICENSE	NLM	1992-1995	National Library of Medicine	3465-3493
+LICENSE	NLM	2280-2283	National Library of Medicine	1955-1983
+LICENSE	NLM	2280-2283	National Library of Medicine	3465-3493
+LICENSE	NLM	2459-2462	National Library of Medicine	1955-1983
+LICENSE	NLM	2459-2462	National Library of Medicine	3465-3493
+LICENSE	NLM	3446-3449	National Library of Medicine	1955-1983
+LICENSE	NLM	3446-3449	National Library of Medicine	3465-3493
+LICENSE	NLM	1985-1988	National Library of Medicine	1955-1983
+LICENSE	NLM	1985-1988	National Library of Medicine	3465-3493
+LICENSE	NLM	1992-1995	National Library of Medicine	1955-1983
+LICENSE	NLM	1992-1995	National Library of Medicine	3465-3493
+LICENSE	NLM	2280-2283	National Library of Medicine	1955-1983
+LICENSE	NLM	2280-2283	National Library of Medicine	3465-3493
+LICENSE	NLM	2459-2462	National Library of Medicine	1955-1983
+LICENSE	NLM	2459-2462	National Library of Medicine	3465-3493
+LICENSE	NLM	3446-3449	National Library of Medicine	1955-1983
+LICENSE	NLM	3446-3449	National Library of Medicine	3465-3493
+README	BB-norm	99-106	Bacteria Biotopes named entity normalization	53-97
+README	BB-norm	644-651	Bacteria Biotopes named entity normalization	53-97
+README	BB-norm	662-669	Bacteria Biotopes named entity normalization	53-97

@@ -1,0 +1,377 @@
+BB-norm-10639454	CNF1	294-298	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	294-298	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	333-337	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	333-337	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	469-473	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	469-473	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	540-544	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	540-544	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	828-832	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	828-832	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	1154-1158	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	1154-1158	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	1900-1904	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	1900-1904	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	2140-2144	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	2140-2144	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	2189-2193	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	2189-2193	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	CNF1	2351-2355	cytotoxic necrotizing factor 1	18-48
+BB-norm-10639454	CNF1	2351-2355	cytotoxic necrotizing factor 1	262-292
+BB-norm-10639454	IL-1alpha	1505-1514	interleukin-1alpha	1485-1503
+BB-norm-10639454	IL-1alpha	1933-1942	interleukin-1alpha	1485-1503
+BB-norm-11548252	neu	82-85	neuraminidase genes	309-328
+BB-norm-11548252	neu	309-312	neuraminidase genes	309-328
+BB-norm-11548252	neu	330-333	neuraminidase genes	309-328
+BB-norm-11548252	neu	801-804	neuraminidase genes	309-328
+BB-norm-11548252	neu	1022-1025	neuraminidase genes	309-328
+BB-norm-11548252	non-O1	1080-1086	non-O139	1088-1096
+BB-norm-11548252	non-O1	1088-1094	non-O139	1088-1096
+BB-norm-12443829	Stx2	134-138	Shiga toxin 2	13-26
+BB-norm-12443829	Stx2	134-138	Shiga toxin 2	119-132
+BB-norm-12443829	Stx2	321-325	Shiga toxin 2	13-26
+BB-norm-12443829	Stx2	321-325	Shiga toxin 2	119-132
+BB-norm-12443829	Stx2	557-561	Shiga toxin 2	13-26
+BB-norm-12443829	Stx2	557-561	Shiga toxin 2	119-132
+BB-norm-12443829	Stx2	953-957	Shiga toxin 2	13-26
+BB-norm-12443829	Stx2	953-957	Shiga toxin 2	119-132
+BB-norm-12563490	pi	681-683	post inoculation	663-679
+BB-norm-12563490	pi	1263-1265	post inoculation	663-679
+BB-norm-15281948	SP	165-167	synthetic pyrethroid	32-52
+BB-norm-15281948	SP	165-167	synthetic pyrethroid	143-163
+BB-norm-15281948	SP	262-264	synthetic pyrethroid	32-52
+BB-norm-15281948	SP	262-264	synthetic pyrethroid	143-163
+BB-norm-15281948	SP	359-361	synthetic pyrethroid	32-52
+BB-norm-15281948	SP	359-361	synthetic pyrethroid	143-163
+BB-norm-15281948	SP	378-380	synthetic pyrethroid	32-52
+BB-norm-15281948	SP	378-380	synthetic pyrethroid	143-163
+BB-norm-15281948	SP	810-812	synthetic pyrethroid	32-52
+BB-norm-15281948	SP	810-812	synthetic pyrethroid	143-163
+BB-norm-15281948	SP	1145-1147	synthetic pyrethroid	32-52
+BB-norm-15281948	SP	1145-1147	synthetic pyrethroid	143-163
+BB-norm-16506453	GARP	55-59	Genetic Algorithm for Rule-Set Production	12-53
+BB-norm-16506453	GARP	55-59	Genetic Algorithm for Rule-Set Production	577-618
+BB-norm-16506453	GARP	620-624	Genetic Algorithm for Rule-Set Production	12-53
+BB-norm-16506453	GARP	620-624	Genetic Algorithm for Rule-Set Production	577-618
+BB-norm-16506453	GARP	815-819	Genetic Algorithm for Rule-Set Production	12-53
+BB-norm-16506453	GARP	815-819	Genetic Algorithm for Rule-Set Production	577-618
+BB-norm-16506453	GARP	1005-1009	Genetic Algorithm for Rule-Set Production	12-53
+BB-norm-16506453	GARP	1005-1009	Genetic Algorithm for Rule-Set Production	577-618
+BB-norm-16506453	GARP	55-59	Genetic Algorithm for Rule-Set Production	12-53
+BB-norm-16506453	GARP	55-59	Genetic Algorithm for Rule-Set Production	577-618
+BB-norm-16506453	GARP	620-624	Genetic Algorithm for Rule-Set Production	12-53
+BB-norm-16506453	GARP	620-624	Genetic Algorithm for Rule-Set Production	577-618
+BB-norm-16506453	GARP	815-819	Genetic Algorithm for Rule-Set Production	12-53
+BB-norm-16506453	GARP	815-819	Genetic Algorithm for Rule-Set Production	577-618
+BB-norm-16506453	GARP	1005-1009	Genetic Algorithm for Rule-Set Production	12-53
+BB-norm-16506453	GARP	1005-1009	Genetic Algorithm for Rule-Set Production	577-618
+BB-norm-16629992	LAMP	212-216	loop-mediated isothermal amplification method	102-147
+BB-norm-16629992	LAMP	212-216	loop-mediated isothermal amplification method	165-210
+BB-norm-16629992	LAMP	299-303	loop-mediated isothermal amplification method	102-147
+BB-norm-16629992	LAMP	299-303	loop-mediated isothermal amplification method	165-210
+BB-norm-16629992	LAMP	1021-1025	loop-mediated isothermal amplification method	102-147
+BB-norm-16629992	LAMP	1021-1025	loop-mediated isothermal amplification method	165-210
+BB-norm-16629992	LAMP	1125-1129	loop-mediated isothermal amplification method	102-147
+BB-norm-16629992	LAMP	1125-1129	loop-mediated isothermal amplification method	165-210
+BB-norm-16629992	LAMP	1244-1248	loop-mediated isothermal amplification method	102-147
+BB-norm-16629992	LAMP	1244-1248	loop-mediated isothermal amplification method	165-210
+BB-norm-16629992	LAMP	1327-1331	loop-mediated isothermal amplification method	102-147
+BB-norm-16629992	LAMP	1327-1331	loop-mediated isothermal amplification method	165-210
+BB-norm-17535798	Stxs	290-294	Shiga toxins	276-288
+BB-norm-18809652	OMVs	172-176	Outer membrane vesicles	147-170
+BB-norm-18809652	OMVs	452-456	Outer membrane vesicles	147-170
+BB-norm-18809652	OMVs	671-675	Outer membrane vesicles	147-170
+BB-norm-18809652	OMVs	802-806	Outer membrane vesicles	147-170
+BB-norm-18809652	OMVs	933-937	Outer membrane vesicles	147-170
+BB-norm-18809652	OMVs	1087-1091	Outer membrane vesicles	147-170
+BB-norm-18809652	OMVs	1127-1131	Outer membrane vesicles	147-170
+BB-norm-18809652	OMVs	1202-1206	Outer membrane vesicles	147-170
+BB-norm-18809652	LPS	425-428	lipopolysaccharide	88-106
+BB-norm-18809652	LPS	425-428	lipopolysaccharide	405-423
+BB-norm-18809652	LPS	563-566	lipopolysaccharide	88-106
+BB-norm-18809652	LPS	563-566	lipopolysaccharide	405-423
+BB-norm-18809652	LPS	771-774	lipopolysaccharide	88-106
+BB-norm-18809652	LPS	771-774	lipopolysaccharide	405-423
+BB-norm-18809652	LPS	1176-1179	lipopolysaccharide	88-106
+BB-norm-18809652	LPS	1176-1179	lipopolysaccharide	405-423
+BB-norm-18809652	LPS	1273-1276	lipopolysaccharide	88-106
+BB-norm-18809652	LPS	1273-1276	lipopolysaccharide	405-423
+BB-norm-18809652	LPS	1390-1393	lipopolysaccharide	88-106
+BB-norm-18809652	LPS	1390-1393	lipopolysaccharide	405-423
+BB-norm-19126546	SPI-2	102-107	Salmonella pathogenicity island 2	468-501
+BB-norm-19126546	SPI-2	503-508	Salmonella pathogenicity island 2	468-501
+BB-norm-19126546	SsrB	127-131	SsrB(C)	1312-1319
+BB-norm-19126546	SsrB	534-538	SsrB(C)	1312-1319
+BB-norm-19126546	SsrB	1004-1008	SsrB(C)	1312-1319
+BB-norm-19126546	SsrB	1093-1097	SsrB(C)	1312-1319
+BB-norm-19126546	SsrB	1306-1310	SsrB(C)	1312-1319
+BB-norm-19126546	SsrB	1312-1316	SsrB(C)	1312-1319
+BB-norm-19126546	SsrB	1541-1545	SsrB(C)	1312-1319
+BB-norm-19126546	SsrB	1999-2003	SsrB(C)	1312-1319
+BB-norm-19126546	SsrB	2078-2082	SsrB(C)	1312-1319
+BB-norm-19526548	GO	882-884	gene ontology	867-880
+BB-norm-20077035	RepA	435-439	replication protein	414-433
+BB-norm-20077035	RCR	758-761	rolling-circle-replication	730-756
+BB-norm-20077035	gfp	1328-1331	green fluorescent protein	1301-1326
+BB-norm-20518637	CIs	925-928	confidence intervals	903-923
+BB-norm-20609608	LSECs	359-364	liver sinusoidal endothelial cells	111-145
+BB-norm-20609608	LSECs	359-364	liver sinusoidal endothelial cells	323-357
+BB-norm-20609608	LSECs	430-435	liver sinusoidal endothelial cells	111-145
+BB-norm-20609608	LSECs	430-435	liver sinusoidal endothelial cells	323-357
+BB-norm-20609608	LSECs	695-700	liver sinusoidal endothelial cells	111-145
+BB-norm-20609608	LSECs	695-700	liver sinusoidal endothelial cells	323-357
+BB-norm-20609608	LSECs	989-994	liver sinusoidal endothelial cells	111-145
+BB-norm-20609608	LSECs	989-994	liver sinusoidal endothelial cells	323-357
+BB-norm-20609608	LSECs	1275-1280	liver sinusoidal endothelial cells	111-145
+BB-norm-20609608	LSECs	1275-1280	liver sinusoidal endothelial cells	323-357
+BB-norm-20609608	LSECs	1380-1385	liver sinusoidal endothelial cells	111-145
+BB-norm-20609608	LSECs	1380-1385	liver sinusoidal endothelial cells	323-357
+BB-norm-20637430	IHC	381-384	immunohistochemistry	20-40
+BB-norm-20637430	IHC	381-384	immunohistochemistry	359-379
+BB-norm-20637430	IHC	497-500	immunohistochemistry	20-40
+BB-norm-20637430	IHC	497-500	immunohistochemistry	359-379
+BB-norm-20637430	IHC	868-871	immunohistochemistry	20-40
+BB-norm-20637430	IHC	868-871	immunohistochemistry	359-379
+BB-norm-20637430	IHC	940-943	immunohistochemistry	20-40
+BB-norm-20637430	IHC	940-943	immunohistochemistry	359-379
+BB-norm-20637430	IHC	1384-1387	immunohistochemistry	20-40
+BB-norm-20637430	IHC	1384-1387	immunohistochemistry	359-379
+BB-norm-20637430	IHC	1523-1526	immunohistochemistry	20-40
+BB-norm-20637430	IHC	1523-1526	immunohistochemistry	359-379
+BB-norm-20950772	FCDC	318-322	fulminant C. difficile colitis	286-316
+BB-norm-20950772	FCDC	464-468	fulminant C. difficile colitis	286-316
+BB-norm-20950772	FCDC	645-649	fulminant C. difficile colitis	286-316
+BB-norm-20950772	FCDC	981-985	fulminant C. difficile colitis	286-316
+BB-norm-20950772	FCDC	1131-1135	fulminant C. difficile colitis	286-316
+BB-norm-20950772	FCDC	1408-1412	fulminant C. difficile colitis	286-316
+BB-norm-20950772	FCDC	1675-1679	fulminant C. difficile colitis	286-316
+BB-norm-21211789	CP	177-179	chronic periodontitis	154-175
+BB-norm-21211789	CP	400-402	chronic periodontitis	154-175
+BB-norm-21211789	CP	474-476	chronic periodontitis	154-175
+BB-norm-21211789	CP	564-566	chronic periodontitis	154-175
+BB-norm-21211789	CP	656-658	chronic periodontitis	154-175
+BB-norm-21211789	CP	1303-1305	chronic periodontitis	154-175
+BB-norm-21211789	CP	1544-1546	chronic periodontitis	154-175
+BB-norm-21211789	CKD	297-300	chronic kidney disease	99-121
+BB-norm-21211789	CKD	297-300	chronic kidney disease	273-295
+BB-norm-21211789	CKD	481-484	chronic kidney disease	99-121
+BB-norm-21211789	CKD	481-484	chronic kidney disease	273-295
+BB-norm-21211789	CKD	571-574	chronic kidney disease	99-121
+BB-norm-21211789	CKD	571-574	chronic kidney disease	273-295
+BB-norm-21211789	CKD	777-780	chronic kidney disease	99-121
+BB-norm-21211789	CKD	777-780	chronic kidney disease	273-295
+BB-norm-21211789	CKD	1339-1342	chronic kidney disease	99-121
+BB-norm-21211789	CKD	1339-1342	chronic kidney disease	273-295
+BB-norm-21211789	CKD	1493-1496	chronic kidney disease	99-121
+BB-norm-21211789	CKD	1493-1496	chronic kidney disease	273-295
+BB-norm-21211789	CKD	1684-1687	chronic kidney disease	99-121
+BB-norm-21211789	CKD	1684-1687	chronic kidney disease	273-295
+BB-norm-21211789	PD	708-710	probing depth	693-706
+BB-norm-21211789	CAL	743-746	clinical attachment level	716-741
+BB-norm-21211789	CAL	1483-1486	clinical attachment level	716-741
+BB-norm-21211789	GFR	930-933	Glomerular filtration rate	902-928
+BB-norm-21211789	PCR	1119-1122	polymerase chain reaction	1092-1117
+BB-norm-22092526	PlI	568-571	plaque index	554-566
+BB-norm-22092526	PlI	1057-1060	plaque index	554-566
+BB-norm-22092526	PlI	1525-1528	plaque index	554-566
+BB-norm-22092526	GI	593-595	gingival index	577-591
+BB-norm-22092526	GI	1053-1055	gingival index	577-591
+BB-norm-22092526	GI	1107-1109	gingival index	577-591
+BB-norm-22092526	GI	1455-1457	gingival index	577-591
+BB-norm-22092526	TNF-α	745-750	tumour necrosis factor-α	719-743
+BB-norm-22092526	TNF-α	1381-1386	tumour necrosis factor-α	719-743
+BB-norm-23339910	E. hirta	243-251	Euphorbia hirta	46-61
+BB-norm-23339910	E. hirta	243-251	Euphorbia hirta	226-241
+BB-norm-23339910	E. hirta	581-589	Euphorbia hirta	46-61
+BB-norm-23339910	E. hirta	581-589	Euphorbia hirta	226-241
+BB-norm-23339910	E. hirta	781-789	Euphorbia hirta	46-61
+BB-norm-23339910	E. hirta	781-789	Euphorbia hirta	226-241
+BB-norm-23339910	E. hirta	1245-1253	Euphorbia hirta	46-61
+BB-norm-23339910	E. hirta	1245-1253	Euphorbia hirta	226-241
+BB-norm-23935486	QS	227-229	quorum sensing	102-116
+BB-norm-23935486	QS	227-229	quorum sensing	211-225
+BB-norm-23935486	QS	430-432	quorum sensing	102-116
+BB-norm-23935486	QS	430-432	quorum sensing	211-225
+BB-norm-23935486	QS	547-549	quorum sensing	102-116
+BB-norm-23935486	QS	547-549	quorum sensing	211-225
+BB-norm-23935486	QS	699-701	quorum sensing	102-116
+BB-norm-23935486	QS	699-701	quorum sensing	211-225
+BB-norm-23935486	LTTR	351-355	LysR-type transcriptional regulator	314-349
+BB-norm-23935486	LTTR	1947-1951	LysR-type transcriptional regulator	314-349
+BB-norm-23935486	LTTR	2022-2026	LysR-type transcriptional regulator	314-349
+BB-norm-23935486	AQ	416-418	alkyl-quinolone	399-414
+BB-norm-23935486	AQ	774-776	alkyl-quinolone	399-414
+BB-norm-23935486	AQ	1263-1265	alkyl-quinolone	399-414
+BB-norm-23935486	AQ	1409-1411	alkyl-quinolone	399-414
+BB-norm-23935486	AQ	1479-1481	alkyl-quinolone	399-414
+BB-norm-23935486	AQ	2178-2180	alkyl-quinolone	399-414
+BB-norm-23935486	PQS	546-549	Pseudomonas quinolone signal	516-544
+BB-norm-23935486	PQS	698-701	Pseudomonas quinolone signal	516-544
+BB-norm-23935486	HHQ	631-634	2-heptyl-4-hydroxyquinoline	602-629
+BB-norm-23935486	NHQ	735-738	2-nonyl-4-hydroxyquinoline	707-733
+BB-norm-23935486	NHQ	1152-1155	2-nonyl-4-hydroxyquinoline	707-733
+BB-norm-23935486	NHQ	1888-1891	2-nonyl-4-hydroxyquinoline	707-733
+BB-norm-23935486	CBD	1109-1112	co-inducer binding domain	1082-1107
+BB-norm-23935486	CBD	1196-1199	co-inducer binding domain	1082-1107
+BB-norm-23935486	QZN	1437-1440	quinazolinone	1422-1435
+BB-norm-23935486	QZN	1608-1611	quinazolinone	1422-1435
+BB-norm-23935486	QZN	1776-1779	quinazolinone	1422-1435
+BB-norm-24261996	RSV	567-570	respiratory syncytial virus	57-84
+BB-norm-24261996	RSV	567-570	respiratory syncytial virus	538-565
+BB-norm-24261996	RSV	636-639	respiratory syncytial virus	57-84
+BB-norm-24261996	RSV	636-639	respiratory syncytial virus	538-565
+BB-norm-24261996	RSV	965-968	respiratory syncytial virus	57-84
+BB-norm-24261996	RSV	965-968	respiratory syncytial virus	538-565
+BB-norm-24261996	RSV	1006-1009	respiratory syncytial virus	57-84
+BB-norm-24261996	RSV	1006-1009	respiratory syncytial virus	538-565
+BB-norm-24261996	RSV	1142-1145	respiratory syncytial virus	57-84
+BB-norm-24261996	RSV	1142-1145	respiratory syncytial virus	538-565
+BB-norm-24261996	RSV	1440-1443	respiratory syncytial virus	57-84
+BB-norm-24261996	RSV	1440-1443	respiratory syncytial virus	538-565
+BB-norm-24261996	RSV	1475-1478	respiratory syncytial virus	57-84
+BB-norm-24261996	RSV	1475-1478	respiratory syncytial virus	538-565
+BB-norm-24261996	RSV	1610-1613	respiratory syncytial virus	57-84
+BB-norm-24261996	RSV	1610-1613	respiratory syncytial virus	538-565
+BB-norm-24302732	anammox	232-239	Anaerobic ammonium-oxidizing	202-230
+BB-norm-24302732	anammox	450-457	Anaerobic ammonium-oxidizing	202-230
+BB-norm-24416173	HE	248-250	Heat Elution	234-246
+BB-norm-24416173	HE	257-259	Heat Elution	234-246
+BB-norm-24416173	HE	401-403	Heat Elution	234-246
+BB-norm-24416173	HE	596-598	Heat Elution	234-246
+BB-norm-24416173	HE	714-716	Heat Elution	234-246
+BB-norm-24416173	HE	964-966	Heat Elution	234-246
+BB-norm-24416173	HE	1104-1106	Heat Elution	234-246
+BB-norm-24416173	HE	1287-1289	Heat Elution	234-246
+BB-norm-24416173	HE	1480-1482	Heat Elution	234-246
+BB-norm-24416173	HE	1666-1668	Heat Elution	234-246
+BB-norm-24416173	HE	1765-1767	Heat Elution	234-246
+BB-norm-24416173	LAMP	478-482	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	599-603	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	717-721	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	967-971	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	1107-1111	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	1171-1175	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	1290-1294	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	1483-1487	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	1669-1673	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24416173	LAMP	1768-1772	Loop-mediated Isothermal Amplification	438-476
+BB-norm-24474814	GBS	223-226	Group B Streptococcus	0-21
+BB-norm-24474814	GBS	223-226	Group B Streptococcus	200-221
+BB-norm-24474814	GBS	481-484	Group B Streptococcus	0-21
+BB-norm-24474814	GBS	481-484	Group B Streptococcus	200-221
+BB-norm-24474814	GBS	641-644	Group B Streptococcus	0-21
+BB-norm-24474814	GBS	641-644	Group B Streptococcus	200-221
+BB-norm-24474814	GBS	781-784	Group B Streptococcus	0-21
+BB-norm-24474814	GBS	781-784	Group B Streptococcus	200-221
+BB-norm-24474814	GBS	1389-1392	Group B Streptococcus	0-21
+BB-norm-24474814	GBS	1389-1392	Group B Streptococcus	200-221
+BB-norm-24474814	GBS	1501-1504	Group B Streptococcus	0-21
+BB-norm-24474814	GBS	1501-1504	Group B Streptococcus	200-221
+BB-norm-24474814	WT	777-779	wild-type	766-775
+BB-norm-24474814	WT	1055-1057	wild-type	766-775
+BB-norm-24651768	KIR	73-76	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	117-120	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	125-128	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	523-526	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	671-674	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	1042-1045	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	1459-1462	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	1471-1474	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	1702-1705	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	1934-1937	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	KIR	1942-1945	Killer-cell Immunoglobulin-like Receptors	480-521
+BB-norm-24651768	HLA	57-60	Human Leucocyte Antigen	591-614
+BB-norm-24651768	HLA	616-619	Human Leucocyte Antigen	591-614
+BB-norm-24651768	HLA	679-682	Human Leucocyte Antigen	591-614
+BB-norm-24651768	HLA	1026-1029	Human Leucocyte Antigen	591-614
+BB-norm-24651768	HLA	1348-1351	Human Leucocyte Antigen	591-614
+BB-norm-24651768	HLA	1845-1848	Human Leucocyte Antigen	591-614
+BB-norm-24651768	HLA	2037-2040	Human Leucocyte Antigen	591-614
+BB-norm-24722168	HGM	230-233	human gut microbiota	111-131
+BB-norm-24722168	HGM	230-233	human gut microbiota	208-228
+BB-norm-24722168	HGM	591-594	human gut microbiota	111-131
+BB-norm-24722168	HGM	591-594	human gut microbiota	208-228
+BB-norm-24722168	HGM	893-896	human gut microbiota	111-131
+BB-norm-24722168	HGM	893-896	human gut microbiota	208-228
+BB-norm-24722168	HGM	919-922	human gut microbiota	111-131
+BB-norm-24722168	HGM	919-922	human gut microbiota	208-228
+BB-norm-24722168	HGM	1306-1309	human gut microbiota	111-131
+BB-norm-24722168	HGM	1306-1309	human gut microbiota	208-228
+BB-norm-24722168	HGM	1839-1842	human gut microbiota	111-131
+BB-norm-24722168	HGM	1839-1842	human gut microbiota	208-228
+BB-norm-24722168	HGM	1878-1881	human gut microbiota	111-131
+BB-norm-24722168	HGM	1878-1881	human gut microbiota	208-228
+BB-norm-24722168	Gn	261-263	gnotobiotic	154-165
+BB-norm-24722168	Gn	261-263	gnotobiotic	248-259
+BB-norm-24722168	Gn	441-443	gnotobiotic	154-165
+BB-norm-24722168	Gn	441-443	gnotobiotic	248-259
+BB-norm-24722168	Gn	617-619	gnotobiotic	154-165
+BB-norm-24722168	Gn	617-619	gnotobiotic	248-259
+BB-norm-24722168	Gn	881-883	gnotobiotic	154-165
+BB-norm-24722168	Gn	881-883	gnotobiotic	248-259
+BB-norm-24722168	Gn	910-912	gnotobiotic	154-165
+BB-norm-24722168	Gn	910-912	gnotobiotic	248-259
+BB-norm-24722168	Gn	1310-1312	gnotobiotic	154-165
+BB-norm-24722168	Gn	1310-1312	gnotobiotic	248-259
+BB-norm-24722168	Gn	1882-1884	gnotobiotic	154-165
+BB-norm-24722168	Gn	1882-1884	gnotobiotic	248-259
+BB-norm-24722168	HRV	295-298	human rotavirus	278-293
+BB-norm-24722168	HRV	372-375	human rotavirus	278-293
+BB-norm-24722168	HRV	770-773	human rotavirus	278-293
+BB-norm-24722168	HRV	778-781	human rotavirus	278-293
+BB-norm-24722168	HRV	1131-1134	human rotavirus	278-293
+BB-norm-24722168	HRV	1364-1367	human rotavirus	278-293
+BB-norm-24722168	HRV	1420-1423	human rotavirus	278-293
+BB-norm-24722168	HRV	1560-1563	human rotavirus	278-293
+BB-norm-24722168	HRV	1676-1679	human rotavirus	278-293
+BB-norm-24722168	AttHRV	775-781	attenuated HRV	759-773
+BB-norm-24722168	AttHRV	1128-1134	attenuated HRV	759-773
+BB-norm-24722168	AttHRV	1417-1423	attenuated HRV	759-773
+BB-norm-24722168	AttHRV	1673-1679	attenuated HRV	759-773
+BB-norm-24722168	LGG	1196-1199	Lactobacillus rhamnosus GG	10-36
+BB-norm-24722168	LGG	1196-1199	Lactobacillus rhamnosus GG	1168-1194
+BB-norm-24722168	LGG	1288-1291	Lactobacillus rhamnosus GG	10-36
+BB-norm-24722168	LGG	1288-1291	Lactobacillus rhamnosus GG	1168-1194
+BB-norm-24722168	LGG	1444-1447	Lactobacillus rhamnosus GG	10-36
+BB-norm-24722168	LGG	1444-1447	Lactobacillus rhamnosus GG	1168-1194
+BB-norm-24722168	LGG	1512-1515	Lactobacillus rhamnosus GG	10-36
+BB-norm-24722168	LGG	1512-1515	Lactobacillus rhamnosus GG	1168-1194
+BB-norm-24722168	LGG	1734-1737	Lactobacillus rhamnosus GG	10-36
+BB-norm-24722168	LGG	1734-1737	Lactobacillus rhamnosus GG	1168-1194
+BB-norm-24722168	CFU	1251-1254	colony-forming-unit	1230-1249
+BB-norm-24722168	CFU	1468-1471	colony-forming-unit	1230-1249
+BB-norm-24837294	HCAEC	316-321	human coronary artery endothelial cells	275-314
+BB-norm-24837294	HCAEC	1071-1076	human coronary artery endothelial cells	275-314
+BB-norm-24837294	RT-PCR	506-512	Reverse transcription-PCR	479-504
+BB-norm-24837294	PgfS	44-48	protein glycosyltransferase of streptococci	637-680
+BB-norm-24837294	PgfS	631-635	protein glycosyltransferase of streptococci	637-680
+BB-norm-24837294	PgfS	944-948	protein glycosyltransferase of streptococci	637-680
+BB-norm-24837294	PgfS	1856-1860	protein glycosyltransferase of streptococci	637-680
+BB-norm-3492570	CSF	845-848	cerebrospinal fluid	824-843
+BB-norm-3492570	CSF	1096-1099	cerebrospinal fluid	824-843
+BB-norm-4387161	NAD	473-476	Nicotinamide adenine dinucleotide	438-471
+BB-norm-4387161	NAD	672-675	Nicotinamide adenine dinucleotide	438-471
+BB-norm-9467391	rrn	15-18	Ribosomal RNA	0-13
+BB-norm-9467391	rrn	110-113	Ribosomal RNA	0-13
+BB-norm-9467391	rrn	206-209	Ribosomal RNA	0-13
+BB-norm-9467391	rrn	773-776	Ribosomal RNA	0-13
+BB-norm-9804019	CFUs	1043-1047	colony-forming units	1021-1041
+BB-norm-9804019	MRSA	1347-1351	methicillin resistant S. aureus	1314-1345
+BB-norm-9804019	MRSA	1432-1436	methicillin resistant S. aureus	1314-1345
+BB-norm-F-15345452-004	band c	1358-1364	bands, identified as Enterococcus faecalis	1879-1921
+BB-norm-F-15345452-004	band c	1431-1437	bands, identified as Enterococcus faecalis	1879-1921
+BB-norm-F-15345452-004	band c	1923-1929	bands, identified as Enterococcus faecalis	1879-1921
+BB-norm-F-24412414-000	LAB	40-43	lactic acid bacteria	18-38
+BB-norm-F-24412414-000	LAB	643-646	lactic acid bacteria	18-38
+BB-norm-F-24412414-000	PLA	524-527	3-phenyllactic acid	503-522
+BB-norm-F-24412414-000	CFS	632-635	cell-free supernatants	608-630
+BB-norm-F-24412414-001	PLA	37-40	3-phenyllactic acid	16-35
+BB-norm-F-24412414-004	PLA	14-17	3-phenyllactic acid	494-513
+BB-norm-F-24412414-004	PLA	83-86	3-phenyllactic acid	494-513
+BB-norm-F-24412414-004	PLA	269-272	3-phenyllactic acid	494-513
+BB-norm-F-24412414-004	PLA	515-518	3-phenyllactic acid	494-513
+BB-norm-F-24412414-004	LAB	545-548	lactic acid bacteria	523-543
+BB-norm-F-25648083-000	EPS	546-549	exopolysaccharides	526-544
+BB-norm-F-25648083-000	EPS	638-641	exopolysaccharides	526-544
+BB-norm-F-25880122-000	EPS	632-635	exopolysaccharide	613-630
+BB-norm-F-25880122-001	gtf	434-437	glycosyl transferase	412-432
