@@ -54,7 +54,7 @@ def match_dict_id(a2, a1, obt):
     for i in a2.index:
         if a2.loc[i, 'dict_type'] == 'OntoBiotope':
             a2.loc[i, 'dict_id'] = 'Referent:' + str(
-                obt[obt['entity_id'] == a1.loc[i, 'a1_id']].pred_obt.iloc[0])[4:]
+                obt[obt['entity_id'] == a1.loc[i, 'a1_id']].matched_id.iloc[0])[4:]
         else:
             a2.loc[i, 'dict_id'] = 'Referent:' + str('-1')
     return a2
@@ -88,18 +88,17 @@ def match_data(path, file_name, obt_result):
     for i in range(len(result)):
         f_handler.write(result.iloc[i, 0]+'\t'+result.iloc[i, 1]+' '+result.iloc[i, 2]+' '+result.iloc[i, 3]+'\n')
 
-    
+
 if __name__=="__main__":
     if not os.path.exists('../output/'):
         os.makedirs('../output')
 
     # Read in the prediction result
-    obt_result = pd.read_csv('../tmp_output/5fold_pred_result_test.tsv', sep='\t', encoding='utf-8')\
+    obt_result = pd.read_csv('OntoBiotope_result.tsv', sep='\t', encoding='utf-8')\
         .reset_index(drop=True)
-    obt_result = obt_result[['text_id', 'entity_id', 'input', 'pred', 'pred_obt']]
 
     # Generate corresponding .a2 file for each .a1 file
-    g = os.walk(r"../input_data/BioNLP-OST-2019_BB-norm_dev")
+    g = os.walk(r"../input_data/BioNLP-OST-2019_BB-norm_test")
     for path, dir_list, f_list in g:
         file_list = tqdm(f_list)
         for file_name in file_list:
