@@ -7,6 +7,7 @@ Train a CNN model to predict normalized habitats or phenotypes
 
 from collections import Counter
 import math
+import os
 import numpy as np
 from keras.models import Sequential
 from keras.layers import Dense, Conv1D, MaxPooling1D, Dropout
@@ -294,6 +295,9 @@ def voting_model(prediction=False):
 
 
 if __name__=="__main__":
+    if not os.path.exists('../tmp_output/'):
+        os.makedirs('../tmp_output/')
+    
     # np.random.seed(42)
     ref = parse_biotope_dict()
 
