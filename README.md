@@ -52,7 +52,7 @@ used for ensemble method as described in the paper(`generate_five_fold_dataset(p
   
 - **CNN module**
    
-   Input: 8x200, output: 1x139
+   Input: `8x200`, output: `1x139`
    ```        
     self.model.add(Conv1D(filters=arg, kernel_size=4, padding='same',
                           input_shape=(entity_embedding_size, vector_len)))
@@ -67,10 +67,10 @@ used for ensemble method as described in the paper(`generate_five_fold_dataset(p
   - Return the standard concepts with the majority votes
 
 #### Evaluation
-The results was formatted as the given label files ([`.a2` file](#free-text-and-entities)) with [`online_test_output.py`]
+The prediction result (`OntoBiotope_result.tsv`) was formatted as the given label files ([`.a2` file](#free-text-and-entities)) with [`online_test_output.py`]
 (https://github.com/OXPHOS/BioNLP/blob/master/src/online_test_output.py).
 
-The test suite could be found [here](https://sites.google.com/view/bb-2019/evaluation-results#h.p_ru-Q1Kt6ssyr)
+The test suite could be found [here](https://sites.google.com/view/bb-2019/evaluation-results#h.p_ru-Q1Kt6ssyr).
 
 ### Data
 #### Dictionaries
@@ -86,14 +86,10 @@ Two types of entities were involved in the task: phenotype, which describes micr
 
 The statistics of all available entities are listed below.
 
-|       |          |               Total Number         |     Number after de-duplication    |
-|-------|----------|-------------|------------|---------|-------------|------------|---------|
-|       | Article# | Habitat     | Phenotype  | H+P     | Habitat     | Phenotype  | H+P    
+| Datasets | Article# | Habitat_total     | Phenotype_total  | H+P_total    | Habitat_de-duplicated     | Phenotype_de-duplicated   | H+P_de-duplicated     
 |-------|----------|-------------|------------|---------|-------------|------------|---------|
 | Train | 133      | 1118        | 369        | 1487    | 627         | 176        | 803     |
-|-------|----------|-------------|------------|---------|-------------|------------|---------|
 | Dev   | 66       | 610         | 161        | 771     | 348         | 97         | 445     |
-|-------|----------|-------------|------------|---------|-------------|------------|---------|
 | Test  | 97       | 924         | 252        | 1176    | 596         | 148        | 744     |
 
 `.a1` files include different pieces of literature. Numbering, type of the row, start and end positions, as well as the 
@@ -143,11 +139,7 @@ Then, run the scripts as the pipeline suggested.
 | Team | Habitat | Phenotype |
 |---------|---------|-----------|
 | PADIA_BacReader    | 0.684    | 0.758     |
-|---------|---------|-----------|
 | Challenge-provided baseline    | 0.559    | 0.581     |
-|---------|---------|-----------|
 | AmritaCen_healthcare    | 0.522    | 0.646     |
-|---------|---------|-----------|
 | BLARI_GMU    | 0.615   | 0.646     |
-|---------|---------|-----------|
 | BOUN-ISIK    | 0.687    | 0.566     |
