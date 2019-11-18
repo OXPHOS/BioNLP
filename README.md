@@ -1,4 +1,4 @@
-# BacReader (WIP)
+# BacReader
 #### For BioNLP-OST 2019 task [Bacteria Biotope](https://sites.google.com/view/bb-2019/home)
 ## Table of content
 - [Overview](#overview)
